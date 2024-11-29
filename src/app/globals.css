@@ -14,8 +14,105 @@
   }
 }
 
+@font-face {
+  font-family: 'Optima Nova LT';
+  src: url('../../public/optimaRegular.woff2') format('woff2');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima Nova LT';
+  src: url('../../public/optimaMedium.woff2') format('woff2');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Optima Nova LT';
+  src: url('../../public/optimaBold.woff2') format('woff2');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F4F6;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Optima Nova LT", sans-serif;
+  font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #2b2b2b;
+  line-height: 39px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+p, li, span {
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  /*line-height: 28px;
+  color: #333333;*/
+}
+
+.generalButtonLink {
+  color: #ffffff;
+  background-color: #bb0000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.generalButtonLink:hover {
+  background-color: #990000;
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 55px;
+    color: #bb0000;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  p, li, span {
+    /*font-size: 18px;*/
+  }
+}
+
+.currentPage {
+  color: red;
 }
