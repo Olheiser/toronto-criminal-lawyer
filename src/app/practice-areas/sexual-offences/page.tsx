@@ -21,7 +21,7 @@ export default function Page() {
                 <section className={`${styles.pageContent} ${styles.categoryBody}`}>
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></h2>
-                        <p className={styles.categoryCopy}><strong><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></strong> is defined by the Criminal Code of Canada as any form of non-consensual sexual contact or activity that violates the victim's sexual integrity, regardless of the specific body part involved.</p>
+                        <p className={styles.categoryCopy}><strong><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></strong> is defined by the Criminal Code of Canada as any form of non-consensual sexual contact or activity that violates the victim&apos;s sexual integrity, regardless of the specific body part involved.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></strong>
                         </p>

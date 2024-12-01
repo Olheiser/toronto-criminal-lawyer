@@ -2,9 +2,6 @@ import React from "react"
 import styles from "@/styles/Subpage.module.css";
 import LeadForm from "../../components/LeadForm";
 import PageHeader from "../../components/PageHeader";
-import Image from "next/image";
-import Link from "next/link";
-import CourtHouse from "../../../../public/criminal-lawyer-courthouse.webp";
 
 import type { Metadata } from "next";
 
@@ -32,7 +29,7 @@ export default function Page() {
                         <li>Bell Aliant Regional Communications Limited Partnership v. Frey,<a href="https://www.canlii.org/en/sk/skca/doc/2010/2010skca33/2010skca33.html?searchUrlHash=AAAAAQAWcm9iaW5zb24gYW5kIG5pY2hvbGFzIAAAAAAB&resultIndex=28">2010 SKCA 33</a></li>
                         <li>MTS Communications Inc. V Frey, <a href="https://www.canlii.org/en/sk/skca/doc/2010/2010skca34/2010skca34.html?searchUrlHash=AAAAAQAWcm9iaW5zb24gYW5kIG5pY2hvbGFzIAAAAAAB&resultIndex=30">2010 SKCA 34</a></li>
                     </ul>
-                    <h2 className={styles.caseHeading}>King's Bench for Saskatchewan</h2>
+                    <h2 className={styles.caseHeading}>King&apos;s Bench for Saskatchewan</h2>
                     <ul className={styles.casesList}>
                         <li>Driediger v. Ashley Furniture Industries Inc., <a href="https://www.canlii.org/en/sk/skqb/doc/2010/2010skqb437/2010skqb437.html?searchUrlHash=AAAAAQAWcm9iaW5zb24gYW5kIG5pY2hvbGFzIAAAAAAB&resultIndex=4">2010 SKQB 437</a></li>
                         <li>White v. Glaxosmithkline Inc., <a href="https://www.canlii.org/en/sk/skqb/doc/2010/2010skqb174/2010skqb174.html?searchUrlHash=AAAAAQAWcm9iaW5zb24gYW5kIG5pY2hvbGFzIAAAAAAB&resultIndex=13">2010 SKQB 174</a></li>

@@ -19,7 +19,7 @@ export default function Page() {
                 <section className={`${styles.pageContent} ${styles.categoryBody}`}>
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}>Theft</h2>
-                        <p className={styles.categoryCopy}><strong>Theft</strong> is the act of taking someone else's property without their consent, unless you genuinely believe that the property is rightfully yours. It does not matter if you only intend to possess the item temporarily. This offence also includes the act of converting someone else's property for your own benefit.</p>
+                        <p className={styles.categoryCopy}><strong>Theft</strong> is the act of taking someone else&apos;s property without their consent, unless you genuinely believe that the property is rightfully yours. It does not matter if you only intend to possess the item temporarily. This offence also includes the act of converting someone else&apos;s property for your own benefit.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong>Theft</strong>
                         </p>
@@ -51,7 +51,7 @@ export default function Page() {
 
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}>Mischief</h2>
-                        <p className={styles.categoryCopy}><strong>Mischief</strong> is the intentional destruction of property, rendering it dangerous or useless to others. You can also be charged with mischief if you obstruct or interfere with others' lawful use and enjoyment of property.</p>
+                        <p className={styles.categoryCopy}><strong>Mischief</strong> is the intentional destruction of property, rendering it dangerous or useless to others. You can also be charged with mischief if you obstruct or interfere with others&apos; lawful use and enjoyment of property.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong>Mischief</strong>
                         </p>

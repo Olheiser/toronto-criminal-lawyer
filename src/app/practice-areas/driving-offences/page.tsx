@@ -19,7 +19,7 @@ export default function Page() {
                 <section className={`${styles.pageContent} ${styles.categoryBody}`}>
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}><Link href="/practice-areas/driving-offences/impaired-driving">Impaired Driving</Link></h2>
-                        <p className={styles.categoryCopy}><strong><Link href="/practice-areas/driving-offences/impaired-driving">Impaired Driving</Link></strong> refers to the operation of a motor vehicle while impaired by alcohol, drugs, or both. It's a charge based on evidence (indicia) of impairment, like irregular driving patterns, blood shot eyes, coordination issues or slurred speech.</p>
+                        <p className={styles.categoryCopy}><strong><Link href="/practice-areas/driving-offences/impaired-driving">Impaired Driving</Link></strong> refers to the operation of a motor vehicle while impaired by alcohol, drugs, or both. It&apos;s a charge based on evidence (indicia) of impairment, like irregular driving patterns, blood shot eyes, coordination issues or slurred speech.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong><Link href="/practice-areas/driving-offences/impaired-driving">Impaired Driving</Link></strong>
                         </p>
@@ -67,7 +67,7 @@ export default function Page() {
 
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}>Flight From a Peace Officer</h2>
-                        <p className={styles.categoryCopy}>The <strong><span className={styles.learnMoreLink}>Flight From a Peace Officer</span></strong> charge is issued when an individual operates a vehicle or vessel while being pursued by a peace officer and does not stop as soon as it's reasonable to do so without a valid reason.</p>
+                        <p className={styles.categoryCopy}>The <strong><span className={styles.learnMoreLink}>Flight From a Peace Officer</span></strong> charge is issued when an individual operates a vehicle or vessel while being pursued by a peace officer and does not stop as soon as it&apos;s reasonable to do so without a valid reason.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong><span className={styles.learnMoreLink}>Flight From a Peace Officer</span></strong>
                         </p>                    

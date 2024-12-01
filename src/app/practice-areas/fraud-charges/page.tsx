@@ -43,7 +43,7 @@ export default function Page() {
 
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}>Identity Theft</h2>
-                        <p className={styles.categoryCopy}><strong>Identity Theft</strong> refers to the act of obtaining or possessing another person's personal identity information with the intention of committing a serious offence that involves fraud, deceit, or falsehood as an integral part of the crime.</p>
+                        <p className={styles.categoryCopy}><strong>Identity Theft</strong> refers to the act of obtaining or possessing another person&apos;s personal identity information with the intention of committing a serious offence that involves fraud, deceit, or falsehood as an integral part of the crime.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong>Identity Theft</strong>
                         </p>

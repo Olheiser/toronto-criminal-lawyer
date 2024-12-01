@@ -56,13 +56,13 @@ export default function Page() {
                     <li>The offence was committed in a domestic context</li>
                 </ul>
 
-                <p className={styles.contentBreak}>Call <a href="tel:6476972876">(647) 697-2876</a> to consult a lawyer if you’re concerned about the potential penalties associated with a criminal harassment charge.</p>
+                <p className={styles.contentBreak}>Call <a href="tel:6476972876">(647) 697-2876</a> to consult a lawyer if you&apos;re concerned about the potential penalties associated with a criminal harassment charge.</p>
 
-                <h2>Don’t Face Your Criminal Harassment Charge Alone</h2>
+                <h2>Don&apos;t Face Your Criminal Harassment Charge Alone</h2>
                 <p className={styles.contentBreak}>An experienced criminal defence lawyer is essential when facing a criminal harassment charge. A lawyer will navigate the complexities of the legal system, protect your rights, and develop a defence strategy tailored to your specific circumstances.</p>
 
                 <h2>Need a Lawyer? Get a Free Consultation With a Skilled Criminal Lawyer</h2>
-                <p>Don't hesitate to reach out to us if you have been charged with criminal harassment. Call <a href="tel:6476972876">(647) 697-2876</a> to discuss your options with a criminal lawyer.</p>
+                <p>Don&apos;t hesitate to reach out to us if you have been charged with criminal harassment. Call <a href="tel:6476972876">(647) 697-2876</a> to discuss your options with a criminal lawyer.</p>
 
                 </article>
                 <aside className={styles.form}>

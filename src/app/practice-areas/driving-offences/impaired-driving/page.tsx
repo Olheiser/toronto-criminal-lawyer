@@ -16,12 +16,12 @@ export default function Page() {
             <PageHeader title="Impaired Driving"/>
             <div className={styles.pageContainer}>
                 <article className={styles.pageContent}>
-                    <p className={styles.contentBreak}><strong>Impaired driving</strong> is a serious criminal offence that poses significant risks to public safety. It involves operating a motor vehicle while under the influence of alcohol or drugs, which can severely impair one's ability to drive safely.</p>
+                    <p className={styles.contentBreak}><strong>Impaired driving</strong> is a serious criminal offence that poses significant risks to public safety. It involves operating a motor vehicle while under the influence of alcohol or drugs, which can severely impair one&apos;s ability to drive safely.</p>
 
                     <h2>Impaired Driving: Criminal Code Definition</h2>
                     <p><strong>Impaired driving</strong> is defined under <a href="https://laws-lois.justice.gc.ca/eng/acts/c-46/section-320.14.html">Section 320.14 of the Criminal Code.</a></p>
                     <p><em>320.14 (1) Everyone commits an offence who</em></p>
-                    <p><em>(a) operates a conveyance while the person’s ability to operate it is impaired to any degree by alcohol or a drug or by a combination of alcohol and a drug;</em></p>
+                    <p><em>(a) operates a conveyance while the person&apos;s ability to operate it is impaired to any degree by alcohol or a drug or by a combination of alcohol and a drug;</em></p>
                     <p><em>(b) subject to subsection (5), has, within two hours after ceasing to operate a conveyance, a blood alcohol concentration that is equal to or exceeds 80 mg of alcohol in 100 mL of blood;</em></p>
                     <p><em>(c) subject to subsection (6), has, within two hours after ceasing to operate a conveyance, a blood drug concentration that is equal to or exceeds the blood drug concentration for the drug that is prescribed by regulation; or</em></p>
                     <p className={styles.contentBreak}><em>(d) subject to subsection (7), has, within two hours after ceasing to operate a conveyance, a blood alcohol concentration and a blood drug concentration that is equal to or exceeds the blood alcohol concentration and the blood drug concentration for the drug that are prescribed by regulation for instances where alcohol and that drug are combined.</em></p>
@@ -32,7 +32,7 @@ export default function Page() {
                         <li>The identity of the accused.</li>
                         <li>The date and location of the incident.</li>
                         <li>That the accused was operating a vehicle.</li>
-                        <li>That the accused's ability to operate the vehicle was impaired by alcohol or drugs.</li>
+                        <li>That the accused&apos;s ability to operate the vehicle was impaired by alcohol or drugs.</li>
                     </ul>
 
                     <h2>Potential Penalties for Impaired Driving</h2>

@@ -54,7 +54,7 @@ const FAQAccordion = () => {
             fines and court surcharges.
             <br /><br />
             In addition to legal fees, your criminal lawyer might also charge
-            you for out-of-pocket expenses known as "disbursements". This
+            you for out-of-pocket expenses known as &quot;disbursements&quot;. This
             includes things like the cost of travel and printing. Many lawyers
             bill by the hour but some will offer a flat or fixed fee for
             service.
@@ -82,7 +82,7 @@ const FAQAccordion = () => {
     {activeIndex === 2 && (
         <div className={styles.faqAnswer}>
         <p>The duration of a criminal case varies depending on its complexity,
-        the charges, and the court’s schedule. Your criminal lawyer can
+        the charges, and the court&apos;s schedule. Your criminal lawyer can
         provide an estimated timeline based on the specifics of your case.</p>
         <Button link="/criminal-process" text="Criminal Process" /> 
         </div>

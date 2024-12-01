@@ -21,10 +21,10 @@ export default function Page() {
                     <p className={styles.contentBreak}>You have constitutional rights that must be respected throughout the legal process. Common rights violations include unlawful search and seizure, improper interrogation, and lack of access to legal counsel. Identifying any violations of your rights can significantly impact the outcome of your case. A criminal lawyer can help determine if your rights were violated and how this can be used in your defence.</p>
 
                     <h2>Can the Prosecutor Prove the Offence?</h2>
-                    <p className={styles.contentBreak}>The burden of proof lies with the prosecution, which means they must prove your guilt beyond a reasonable doubt. This involves presenting sufficient evidence to meet all elements of the offence you are charged with. Evaluating the strength of the prosecution's case is crucial in determining your chances of beating the charges. A criminal lawyer will scrutinize the evidence and identify any weaknesses that can be challenged in court.</p>
+                    <p className={styles.contentBreak}>The burden of proof lies with the prosecution, which means they must prove your guilt beyond a reasonable doubt. This involves presenting sufficient evidence to meet all elements of the offence you are charged with. Evaluating the strength of the prosecution&apos;s case is crucial in determining your chances of beating the charges. A criminal lawyer will scrutinize the evidence and identify any weaknesses that can be challenged in court.</p>
 
                     <h2>The Role of Evidence in Your Defence</h2>
-                    <p className={styles.contentBreak}>Evidence plays a critical role in criminal cases. Challenging the evidence against you is essential for building a strong defence. A criminal lawyer will thoroughly review all evidence, identify any inconsistencies or issues, and develop a strategy to refute or weaken the prosecution's case.</p>
+                    <p className={styles.contentBreak}>Evidence plays a critical role in criminal cases. Challenging the evidence against you is essential for building a strong defence. A criminal lawyer will thoroughly review all evidence, identify any inconsistencies or issues, and develop a strategy to refute or weaken the prosecution&apos;s case.</p>
 
                     <h2>How a Criminal Lawyer Can Help</h2>
                     <p>A criminal lawyer can provide invaluable assistance in numerous ways:</p>

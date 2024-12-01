@@ -27,7 +27,7 @@ export default function Page() {
 
                     <article className={styles.categoryCard}>
                         <h2 className={styles.categoryHeading}>Possession for the Purpose of Trafficking</h2>
-                        <p className={styles.categoryCopy}><strong>Possession for the Purpose of Trafficking</strong>, as outlined by the CDSA, involves having a substance listed in Schedule I, II, III, IV, or V with the intention of engaging in trafficking activities. The quantity of the substance found in the accused's possession is used to distinguish between possession for personal use and possession for the purpose of trafficking. The specific threshold amounts vary depending on the substance involved.</p>
+                        <p className={styles.categoryCopy}><strong>Possession for the Purpose of Trafficking</strong>, as outlined by the CDSA, involves having a substance listed in Schedule I, II, III, IV, or V with the intention of engaging in trafficking activities. The quantity of the substance found in the accused&apos;s possession is used to distinguish between possession for personal use and possession for the purpose of trafficking. The specific threshold amounts vary depending on the substance involved.</p>
                         <p className={styles.categoryLearnMore}>
                             Learn more about <strong>Possession for the Purpose of Trafficking</strong>
                         </p>

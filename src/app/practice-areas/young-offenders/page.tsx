@@ -29,10 +29,10 @@ export default function Page() {
                     <p className={styles.contentBreak}>The YCJA recognizes that young people who commit crimes need guidance, support, and treatment to prevent them from becoming entrenched in the criminal justice system. For this reason, the primary focus of the legal process for young offenders is on rehabilitation and reintegration.</p>
 
                     <h2>Importance of Legal Representation</h2>
-                    <p className={styles.contentBreak}>Hiring an experienced criminal lawyer who specializes in young offender cases is crucial to ensuring that your child's rights are protected and that they receive the best possible outcome.</p>
+                    <p className={styles.contentBreak}>Hiring an experienced criminal lawyer who specializes in young offender cases is crucial to ensuring that your child&apos;s rights are protected and that they receive the best possible outcome.</p>
 
                     <h2>Need a Lawyer? Get a Free Consultation With a Skilled Defence Attorney</h2>
-                    <p>We are available 24/7 to discuss your case, explore your options, and provide the guidance and support you need during this challenging time. If your child has been accused of a crime, don't hesitate to call us at <a href="tel:6476972876">(647) 697-2876</a>.</p>
+                    <p>We are available 24/7 to discuss your case, explore your options, and provide the guidance and support you need during this challenging time. If your child has been accused of a crime, don&apos;t hesitate to call us at <a href="tel:6476972876">(647) 697-2876</a>.</p>
 
                 </article>
                 <aside className={styles.form}>

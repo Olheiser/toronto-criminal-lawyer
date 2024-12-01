@@ -8,7 +8,6 @@ import styles from "@/styles/HamburgerMenu.module.css";
 const HamburgerMenu = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
     const [activeSubDropdown, setActiveSubDropdown] = useState<number | null>(null);
 
@@ -111,9 +110,7 @@ const HamburgerMenu = () => {
                     </ul>
                 </li>
                 <li
-                    onMouseEnter={typeof window !== "undefined" && window.innerWidth >= 1000 ? () => setDropdownOpen(true) : undefined}
-                    onMouseLeave={typeof window !== "undefined" && window.innerWidth >= 1000 ? () => setDropdownOpen(false) : undefined}
-                >
+                    >
                     <div className={styles.menuItemRow}>
                         <Link href="/criminal-process" className={pathname === "/criminal-process" ? styles.active : ""}>Criminal Process</Link>
                         <span 
@@ -133,9 +130,7 @@ const HamburgerMenu = () => {
                     </ul>
                 </li>
                 <li 
-                    onMouseEnter={typeof window !== "undefined" && window.innerWidth >= 1000 ? () => setDropdownOpen(true) : undefined}
-                    onMouseLeave={typeof window !== "undefined" && window.innerWidth >= 1000 ? () => setDropdownOpen(false) : undefined}
-                >
+                    >
                     <div className={styles.menuItemRow}>
                         <Link href="/practice-areas" className={pathname === "/practice-areas" ? styles.active : ""}>Practice Areas</Link>
                         <span 

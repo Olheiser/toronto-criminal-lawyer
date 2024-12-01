@@ -32,10 +32,10 @@ export default function Page() {
 
                     <h2>Possession of Narcotics: The Three Types of Possession</h2>
                     <h3>Personal Possession of Narcotics</h3>
-                    <p className={styles.contentH3Break}>Prosecutors must demonstrate that you physically had control over the illicit substance at the time of your arrest and that you were aware of its illegal nature. For instance, if narcotics are discovered in your pocket, home, or vehicle, it falls under the category of "personal possession".</p>
+                    <p className={styles.contentH3Break}>Prosecutors must demonstrate that you physically had control over the illicit substance at the time of your arrest and that you were aware of its illegal nature. For instance, if narcotics are discovered in your pocket, home, or vehicle, it falls under the category of &quot;personal possession&quot;.</p>
 
                     <h3>Constructive Possession of Narcotics</h3>
-                    <p className={styles.contentH3Break}>Constructive possession arises when you exert some level of control over the illicit substance and transfer it into someone else's possession. An example of this is when you possess a key to a locker that contains a scheduled substance.</p>
+                    <p className={styles.contentH3Break}>Constructive possession arises when you exert some level of control over the illicit substance and transfer it into someone else&apos;s possession. An example of this is when you possess a key to a locker that contains a scheduled substance.</p>
 
                     <h3>Joint Possession of Narcotics</h3>
                     <p className={styles.contentBreak}>Joint possession occurs when multiple individuals have the same substance and each of them exercises some degree of control over it.</p>
@@ -50,11 +50,11 @@ export default function Page() {
                     </ul>
                     <p className={styles.contentBreak}>Call <a href="tel:6476972876">(647) 697-2876</a> to consult a criminal lawyer if you have questions about sentencing and how it relates to your possession of narcotics charge.</p>
 
-                    <h2>Don’t Face Your Possession of Narcotics Charge Alone</h2>
+                    <h2>Don&apos;t Face Your Possession of Narcotics Charge Alone</h2>
                     <p className={styles.contentBreak}>An experienced criminal defence lawyer is essential when facing a possession of narcotics charge. They can help you navigate the complexities of the legal system, protect your rights, and develop a strong defence strategy tailored to your specific case.</p>
 
                     <h2>Need a Lawyer? Get a Free Consultation With a Skilled Defence Lawyer</h2>
-                    <p>Don't hesitate to reach out to us if you have been charged with possession of narcotics. Call <a href="tel:6476972876">(647) 697-2876</a> and a skilled defence lawyer will discuss your case with you and explore your options.</p>
+                    <p>Don&apos;t hesitate to reach out to us if you have been charged with possession of narcotics. Call <a href="tel:6476972876">(647) 697-2876</a> and a skilled defence lawyer will discuss your case with you and explore your options.</p>
 
                 </article>
                 <aside className={styles.form}>
