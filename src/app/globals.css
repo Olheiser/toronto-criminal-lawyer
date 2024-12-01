@@ -16,10 +16,10 @@
 
 @font-face {
   font-family: 'Optima Nova LT';
-  src: url('/optimaRegular.woff2') format('woff2');
+  src: url('/optimaRegular.woff2') format('woff2'); /* Changing this might have messed this up*/
   font-weight: 400; /* Regular */
   font-style: normal;
-  font-display: swap;
+  /*font-display: swap;  This could have caused the issue.*/
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url('/optimaMedium.woff2') format('woff2');
   font-weight: 500; /* Medium */
   font-style: normal;
-  font-display: swap;
+  /*font-display: swap;*/
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   src: url('/optimaBold.woff2') format('woff2');
   font-weight: 700; /* Bold */
   font-style: normal;
-  font-display: swap;
+  /*font-display: swap;*/
 }
 
 body {
