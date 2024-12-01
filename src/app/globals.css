@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Optima Nova LT';
-  src: url('/public/optimaRegular.woff2') format('woff2'); /* Changing this might have messed this up*/
+  src: url('/optimaRegular.woff2') format('woff2'); /* Changing this might have messed this up*/
   font-weight: 400; /* Regular */
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Optima Nova LT';
-  src: url('/public/optimaMedium.woff2') format('woff2');
+  src: url('/optimaMedium.woff2') format('woff2');
   font-weight: 500; /* Medium */
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Optima Nova LT';
-  src: url('/public/optimaBold.woff2') format('woff2');
+  src: url('/optimaBold.woff2') format('woff2');
   font-weight: 700; /* Bold */
   font-style: normal;
   font-display: swap;
