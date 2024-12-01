@@ -25,8 +25,12 @@ export default function Home() {
         
         <div className={styles.featureRow}>
         <article className={styles.introContainer}>
-          <h2 className={styles.titleSubheading}>Criminal Defence Specialist</h2>
-          <h1 className={styles.title}>Toronto Criminal Lawyer</h1>
+          <div className={styles.headingContainer}>
+            <h1 className={styles.title}>Toronto Criminal Lawyer</h1>
+            <h2 className={styles.titleSubheading}>Criminal Defence Specialist</h2>
+          </div>
+          
+          
           <p className={styles.introCopy}>Facing criminal charges? <strong><Link href="/about">Nicholas Robinson</Link></strong> is your dedicated <strong>criminal lawyer in Toronto, Ontario.</strong> With a focus on individualized and responsive representation, Nicholas provides tailored defence strategies to protect your rights and achieve the best possible outcome.</p>
           <div className={styles.metricsRow}>
             <div className={styles.metricItem}>
@@ -56,9 +60,11 @@ export default function Home() {
           <Image 
             src={ladyJustice}
             alt="Toronto Criminal Lawyer Lady Justice"
-            //width={250}
-            //height={75}
+            width={1150}
+            height={645}
             className={styles.ladyJustice}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1150px"
+            priority
           />
         </div>
         </div>
@@ -66,8 +72,11 @@ export default function Home() {
 
       <section className={styles.bioRow}>
         <article className={styles.bioContainer}>
-          <h3 className={styles.sectionSubheading}>Legal Service With Compassion</h3>
+          <div className={styles.headingContainer}>
           <h2 className={`${styles.sectionHeading} ${styles.bioHeading}`}><Link href="/practice-areas">Nicholas Robinson, Toronto Criminal Lawyer</Link></h2>
+          <h3 className={styles.sectionSubheading}>Legal Service With Compassion</h3>
+          
+          </div>
           <p className={styles.nickBio}>Nicholas Robinson is a seasoned criminal defence lawyer with a distinguished track record of serving clients in Ontario since 2014. Known for his approachable demeanor, relentless dedication, and commitment to ensuring clients feel understood, respected, and effectively defended, Nicholas provides personalized legal representation that is both strategic and compassionate. His expertise spans a broad spectrum of <Link href="/practice-areas">criminal charges</Link>, including <Link href="/practice-areas/driving-offences/impaired-driving">impaired driving</Link>, <Link href="/practice-areas/fraud-charges/fraud">fraud</Link>, <Link href="/practice-areas/sexual-offences/sexual-assault">sexual assault</Link>, <Link href="/practice-areas/criminal-harassment">criminal harassment</Link>, and <Link href="/practice-areas/drug-charges/possession-of-narcotics">possession of narcotics</Link>.</p>
           <div className={styles.aboutIconGrid}>
             <div className={styles.aboutIconItem}>
@@ -141,9 +150,10 @@ export default function Home() {
 
       <section className={styles.practiceRow}>
         <div className={styles.practiceContainer}>
-          <div className={styles.practiceHeadingDiv}>
-            <h3 className={`${styles.sectionSubheading} ${styles.practiceSubheading}`}>We Defend All Criminal Charges</h3>
+          <div className={styles.leftHeadingContainer}>
             <h2 className={`${styles.sectionHeading} ${styles.practiceHeading}`}><Link href="/practice-areas">Practice Areas</Link></h2>
+            <h3 className={`${styles.sectionSubheading} ${styles.practiceSubheading}`}>We Defend All Criminal Charges</h3>
+            
           </div>
           <div className={styles.practiceCardContainer}>
             <article className={styles.practiceCard}>
@@ -252,7 +262,7 @@ export default function Home() {
             </div>
             <div className={styles.infoButtonContainer}>
               <Link href="/criminal-process/should-i-plead-guilty/" className={styles.infoButtonLink}>
-                  <button className={`${styles.introButton} ${styles.infoButton}`}>Learn More</button>
+                  <button className={`${styles.introButton} ${styles.infoButton}`}>Outcomes of a Guilty Plea</button>
               </Link>
             </div>
           </div>
@@ -275,7 +285,7 @@ export default function Home() {
             </div>
             <div className={styles.infoButtonContainer}>
               <Link href="/criminal-process/can-i-beat-the-charges" className={styles.infoButtonLink}>
-                <button className={`${styles.introButton} ${styles.infoButton}`}>Learn More</button>
+                <button className={`${styles.introButton} ${styles.infoButton}`}>Beating Criminal Charges</button>
               </Link>
             </div>
           </div>
@@ -308,9 +318,9 @@ export default function Home() {
 
       <section className={styles.processRow}>
         <div className={styles.processContainer}>
-          <div className={styles.processHeadingContainer}>
-            <h3 className={styles.sectionSubheading}>Take The First Step Toward Your Defence</h3>
-            <h2 className={styles.sectionHeading}><Link href="/criminal-process">Criminal Process</Link></h2>
+        <div className={styles.leftHeadingContainer}>
+          <h2 className={`${styles.sectionHeading} ${styles.criminalProcessh2}`}><Link href="/criminal-process">Criminal Process</Link></h2>
+          <h3 className={styles.sectionSubheading}>Take The First Step Toward Your Defence</h3>
           </div>
 
           <article>
@@ -380,9 +390,9 @@ export default function Home() {
       <section className={styles.ctaRow}>
         <div className={styles.ctaContainer}>
           <article className={styles.ctaCopySection}>
-            <div className={styles.ctaTitleRow}>
-              <h3 className={styles.sectionSubheading}>Don&apos;t Wait. Speak to a Criminal Lawyer Today</h3>
+            <div className={styles.leftHeadingContainer}>
               <h2 className={`${styles.sectionHeading} ${styles.ctaHeading}`}>The Benefits of Hiring a Criminal Lawyer</h2>
+              <h3 className={styles.sectionSubheading}>Don&apos;t Wait. Speak to a Criminal Lawyer Today</h3>
             </div>
             <div className={styles.ctaContentContainer}>
               <div className={styles.ctaCopyBlock}>
@@ -400,9 +410,9 @@ export default function Home() {
 
       <section className={styles.faqRow}>
         <div className={styles.faqContainer}>
-          <div className={styles.FAQTitleRow}>
-            <h3 className={`${styles.sectionSubheading}`}>Got a Question? Give us a call</h3>
+          <div className={`${styles.FAQTitleRow} ${styles.headingContainer}`}>
             <h2 className={`${styles.sectionHeading}`}><Link href="/criminal-process/faq">Frequently Asked Questions</Link></h2>
+            <h3 className={`${styles.sectionSubheading}`}>Got a Question? Give us a call</h3>
           </div>
           <FAQAccordion />
           <div className={styles.FAQButtonContainer}>
