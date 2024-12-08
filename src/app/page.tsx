@@ -368,7 +368,7 @@ export default async function Home() {
               <h3>Uttering Threats</h3>
               <p><strong>Uttering threats</strong> involves knowingly making threats to cause death, bodily harm, damage property, or harm animals.</p>
               <span className={styles.readMore}>
-                <a href="https://torontocriminallaw.net/practice-areas/sexual-assault/">Learn more about <strong>Uttering Threats Charges</strong>
+                <a href="https://torontocriminallaw.net/practice-areas/sexual-offences/sexual-assault/">Learn more about <strong>Uttering Threats Charges</strong>
                 </a>
               </span><br/>
               <hr className={styles.blockEnd}></hr>
@@ -571,6 +571,17 @@ export default async function Home() {
                 <p>When charged with a crime, having a criminal lawyer on your side makes all the difference. Your criminal lawyer will build a defence strategy tailored to your situation, challenge improper evidence, uncover new evidence, and identify witnesses who may help support your defence.<br/><br/>
                 Additionally, your criminal lawyer will handle all the legal complexities, from taking care of administrative procedures to negotiating with prosecutors for reduced charges or a favorable plea bargain. Their goal is to protect your rights and get the best possible outcome for your case.</p>
                 {/* Map widget */}
+                <div className={styles.mapContainer}>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.820726458673!2d-79.3816777!3d43.6491008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3587eafc142b%3A0xb5314d7d2803c70e!2sNicholas%20Robinson%2C%20Criminal%20Lawyer!5e0!3m2!1sen!2sca!4v1733623604143!5m2!1sen!2sca" 
+                    width="440" 
+                    height="400" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className={styles.map}
+                  >
+                  </iframe>
+                </div>
               </div>
             </div>
           </article>
