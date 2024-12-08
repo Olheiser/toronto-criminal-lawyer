@@ -18,6 +18,10 @@ import criminalProcessPhoto from "../../public/criminal-lawyer-criminal-process.
 import LeadForm from "./components/LeadForm";
 import FAQAccordion from "./components/FAQAccordion";
 
+// For security
+import { headers } from 'next/headers'
+import Script from 'next/script'
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +32,9 @@ export const metadata: Metadata = {
   }
 };
 
-export default function Home() {
+export default async function Home() {
+  const nonce = (await headers()).get('x-nonce')
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -72,6 +78,8 @@ export default function Home() {
       "alternateName": "N.P. Robinson Law Professional Corporation",
       "url": "https://torontocriminallaw.net/",
       "logo": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public",
+      "image": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public",
+      "telephone": "+1-647-697-2876",
       "description": "Nicholas Robinson is a seasoned Toronto Criminal Lawyer specializing in criminal defence for all criminal charges, including impaired driving, sexual assault, and assault charges.",
       "address": {
         "@type": "PostalAddress",
@@ -84,7 +92,7 @@ export default function Home() {
       "contactPoint": {
         "@type": "ContactPoint",
         "@id": "https://torontocriminallaw.net/#ContactPoint",
-        "telephone": "+1-306-994-9522",
+        "telephone": "+1-647-697-2876",
         "contactType": "customer service",
         "contactOption": ["TollFree", "HearingImpairedSupported"],
         "areaServed": [
@@ -99,12 +107,7 @@ export default function Home() {
       ],
         "availableLanguage": ["en", "fr", "de", "uk"]
       },
-      "hoursAvailable": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
+      "openingHours": "Mo-Su 00:00-23:59",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -169,13 +172,6 @@ export default function Home() {
       "https://www.linkedin.com/company/nicholas-robinson-criminal-lawyer",
       "https://maps.app.goo.gl/XD31rPLMQ3GWHR14A"
     ],
-    "publisher": {
-      "@type": "Organization",
-      "name": "N.P. Robinson Law Professional Corporation", 
-      "legalName": "N.P. Robinson Law Professional Corporation", 
-      "url": "https://torontocriminallaw.net/",
-      "logo": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public" 
-    },
     "potentialAction": {
       "@type": "ReserveAction",
       "target": {
@@ -189,6 +185,12 @@ export default function Home() {
   
   return (
     <>
+    {nonce && ( 
+        <Script 
+          strategy="afterInteractive" 
+          nonce={nonce} 
+        />
+      )}
     <main>
       <section className={styles.introRow}>
         
