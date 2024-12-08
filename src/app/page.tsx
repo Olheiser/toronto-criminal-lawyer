@@ -19,7 +19,166 @@ import LeadForm from "./components/LeadForm";
 import FAQAccordion from "./components/FAQAccordion";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://torontocriminallaw.net/",
+    "url": "https://torontocriminallaw.net/",
+    "name": "Toronto Criminal Lawyer - Nicholas Robinson",
+    "image": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public",
+    "datePublished": "2024-12-02T00:00:00+00:00",
+    "dateModified": "2024-12-07T00:00:00+00:00",
+    "description": "Nicholas Robinson, a top-rated Toronto Criminal Lawyer, provides expert legal defence for a wide range of criminal charges, including impaired driving, sexual assault, assault, and fraud. Call (647) 697-2876 for a free consultation with a criminal defence lawyer.",
+    "inLanguage": "en-CA",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Nicholas Robinson Toronto Criminal Lawyer",
+      "url": "https://torontocriminallaw.net/"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://torontocriminallaw.net/"
+        }
+      ]
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "@id": "https://torontocriminallaw.net/#primaryImage",
+      "url": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/972ce4b7-c9a2-4003-3b1d-fd55da8c7800/public",
+      "contentUrl": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/972ce4b7-c9a2-4003-3b1d-fd55da8c7800/public",
+      "caption": "Nicholas Robinson, Toronto Criminal Lawyer, providing expert legal defence.",
+      "width": 1150,
+      "height": 645
+    },
+    "mainEntity": {
+      "@type": "LegalService",
+      "@id": "https://torontocriminallaw.net/#LegalService",
+      "name": "Nicholas Robinson Toronto Criminal Lawyer",
+      "alternateName": "N.P. Robinson Law Professional Corporation",
+      "url": "https://torontocriminallaw.net/",
+      "logo": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public",
+      "description": "Nicholas Robinson is a seasoned Toronto Criminal Lawyer specializing in criminal defence for all criminal charges, including impaired driving, sexual assault, and assault charges.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 King Street West, 56th Floor, First Canadian Place",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M5X 1A9",
+        "addressCountry": "CA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "@id": "https://torontocriminallaw.net/#ContactPoint",
+        "telephone": "+1-306-994-9522",
+        "contactType": "customer service",
+        "contactOption": ["TollFree", "HearingImpairedSupported"],
+        "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        },
+        {
+          "@type": "City",
+          "name": "Toronto"
+        }
+      ],
+        "availableLanguage": ["en", "fr", "de", "uk"]
+      },
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "60"
+      },
+      "serviceArea": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.648429",
+      "longitude": "-79.381290",
+      "name": "Nicholas Robinson Law Office - Toronto"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://torontocriminallaw.net/#DUIDefence",
+          "name": "DUI/DWI Defence",
+          "description": "Legal defence for DUI and impaired driving charges in Toronto."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drug Charges",
+          "@id": "https://torontocriminallaw.net/#DrugCharges",
+          "description": "Expert representation for drug-related offences, including possession and trafficking."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://torontocriminallaw.net/#AssaultDefence",
+          "name": "Assault Charges",
+          "description": "Defence strategies for assault cases, including aggravated and simple assault."
+        }
+      }
+    ],
+    "knowsAbout": [
+      "Criminal Defence Law",
+      "DUI/DWI Defence",
+      "Drug Offences",
+      "Assault Charges",
+      "Fraud Cases",
+      "Youth Criminal Justice Act"
+    ],
+    "sameAs": [
+      "https://g.co/kgs/6SZDyc7", 
+      "https://www.facebook.com/nicholasrobinsoncriminallawyer/", 
+      "https://www.linkedin.com/company/nicholas-robinson-criminal-lawyer",
+      "https://maps.app.goo.gl/XD31rPLMQ3GWHR14A"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "N.P. Robinson Law Professional Corporation", 
+      "legalName": "N.P. Robinson Law Professional Corporation", 
+      "url": "https://torontocriminallaw.net/",
+      "logo": "https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/7ee63c63-b679-4850-e564-11c72c526c00/public" 
+    },
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://calendly.com/nicholas-robinson-criminal-lawyer/free-consultation"
+      },
+      "description": "Schedule a free consultation with Nicholas Robinson, a Toronto Criminal Lawyer."
+    }
+    }
+  }
+  
   return (
+    <>
     <main>
       <section className={styles.introRow}>
         
@@ -64,6 +223,7 @@ export default function Home() {
             height={645}
             className={styles.ladyJustice}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1150px"
+            id="primaryImage"
             priority
           />
         </div>
@@ -423,5 +583,10 @@ export default function Home() {
         </div>
       </section>
     </main>
+    <script 
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+    </>
   );
 }
