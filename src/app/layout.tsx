@@ -9,8 +9,8 @@ import type { Metadata } from "next";
 //import { PopupButton } from "react-calendly";
 
 export const metadata: Metadata = {
-  title: "Toronto Criminal Lawyer | Criminal Defence Services",
-  description: "Nicholas Robinson is a seasoned criminal lawyer based in Toronto, Ontario. Call (647) 697-2876 to receive a free legal consultation.",
+  title: "Nicholas Robinson Toronto Criminal Lawyer | Criminal Defence Services",
+  description: "Nicholas Robinson offers expert criminal defence services in Toronto for all criminal charges. Call (647) 697-2876 for a free consultation.",
 };
 
 export default function RootLayout({

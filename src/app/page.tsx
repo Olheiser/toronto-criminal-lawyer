@@ -18,6 +18,16 @@ import criminalProcessPhoto from "../../public/criminal-lawyer-criminal-process.
 import LeadForm from "./components/LeadForm";
 import FAQAccordion from "./components/FAQAccordion";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Toronto Criminal Lawyer | Criminal Defence Specialist - Nicholas Robinson",
+  description: "Nicholas Robinson offers expert criminal defence services in Toronto for all criminal charges. Call (647) 697-2876 for a free consultation.",
+  alternates: {
+    canonical: 'https://torontocriminallaw.net',
+  }
+};
+
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
