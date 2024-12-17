@@ -957,3 +957,8 @@
       height: 350px; /* Takes up remaining height of the container */
     }
   }
+
+  .handshakePhoto {
+    margin-top: 20px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  }

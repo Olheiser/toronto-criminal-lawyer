@@ -17,6 +17,7 @@ import thirdStep from "../../public/third-step.webp";
 import criminalProcessPhoto from "../../public/criminal-lawyer-criminal-process.webp";
 import LeadForm from "./components/LeadForm";
 import FAQAccordion from "./components/FAQAccordion";
+import HandshakePhoto from "../../public/criminal-lawyer-handshake.webp";
 
 // For security
 import { headers } from 'next/headers'
@@ -217,8 +218,8 @@ export default async function Home() {
               <div className={styles.clientLabel}>Years Defending<br/>Canadians</div>
             </div>
             <div className={styles.metricItem}>
-              <div className={styles.clientMetric}>60+</div>
-              <div className={styles.clientLabel}>Ratings<br/>on Google</div>
+              <div className={styles.clientMetric}>24/7</div>
+              <div className={styles.clientLabel}>Availability and<br/>Client Support</div>
             </div>
           </div>
           <div className={styles.introButtonRow}>
@@ -572,6 +573,14 @@ export default async function Home() {
                 Additionally, your criminal lawyer will handle all the legal complexities, from taking care of administrative procedures to negotiating with prosecutors for reduced charges or a favorable plea bargain. Their goal is to protect your rights and get the best possible outcome for your case.</p>
                 {/* Map widget */}
                 <div className={styles.mapContainer}>
+                  <Image 
+                    src={HandshakePhoto}
+                    alt="Criminal lawyer shaking client's hand."
+                    width={700}
+                    height={374}
+                    className={styles.handshakePhoto}
+                  />
+                  {/* 
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.820726458673!2d-79.3816777!3d43.6491008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3587eafc142b%3A0xb5314d7d2803c70e!2sNicholas%20Robinson%2C%20Criminal%20Lawyer!5e0!3m2!1sen!2sca!4v1733623604143!5m2!1sen!2sca" 
                     width="440" 
@@ -582,6 +591,7 @@ export default async function Home() {
                     className={styles.map}
                   >
                   </iframe>
+                  */}
                 </div>
               </div>
             </div>

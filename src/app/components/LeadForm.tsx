@@ -57,7 +57,7 @@ const LeadForm = () => {
             <div className={styles.checkboxContainer}>
                 <input type="checkbox" id="criminalMatter" name="criminalMatter" required />
                 <label htmlFor="criminalMatter">
-                    I have been, or expect to be, charged with a criminal offense.
+                    I have been, or expect to be, charged with a criminal offence.
                 </label>
             </div>
 

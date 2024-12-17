@@ -22,9 +22,8 @@ const Footer = () => {
                         
                         <p><strong>Contact us<br /> Day or Night 24/7</strong></p>
                         <ul className={styles.footerAddress}>
-                            <li>100 King Street West, 56th Floor</li>
-                            <li>First Canadian Place</li>
-                            <li>Toronto, Ontario M5X 1A9</li>
+                            <li>478 Richmond St W</li>
+                            <li>Toronto, Ontario M5V 1Y2</li>
                         </ul>
                         <ul className={styles.footerContact}>
                             <li><strong>Office Phone: </strong><a href="tel:6476972876">(647) 697-2876</a></li>
