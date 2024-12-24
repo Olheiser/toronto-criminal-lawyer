@@ -23,6 +23,7 @@ const Footer = () => {
                         <p><strong>Contact us<br /> Day or Night 24/7</strong></p>
                         <ul className={styles.footerAddress}>
                             <li>478 Richmond St W</li>
+                            <li>Richmond Place</li>
                             <li>Toronto, Ontario M5V 1Y2</li>
                         </ul>
                         <ul className={styles.footerContact}>
