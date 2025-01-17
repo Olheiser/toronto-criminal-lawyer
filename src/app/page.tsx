@@ -84,10 +84,10 @@ export default async function Home() {
       "description": "Nicholas Robinson is a seasoned Toronto Criminal Lawyer specializing in criminal defence for all criminal charges, including impaired driving, sexual assault, and assault charges.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "100 King Street West, 56th Floor, First Canadian Place",
+        "streetAddress": "478 Richmond St W, Richmond Place",
         "addressLocality": "Toronto",
         "addressRegion": "ON",
-        "postalCode": "M5X 1A9",
+        "postalCode": "M5V 1Y2",
         "addressCountry": "CA"
       },
       "contactPoint": {
