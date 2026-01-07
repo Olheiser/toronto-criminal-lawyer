@@ -9,9 +9,9 @@ import TannerOlheiser from "../../../../public/tanner-olheiser.webp";
 import AlexanderSurgenor from "../../../../public/alexander-surgenor-criminal-lawyer.webp";
 import MariiaTsyliuryk from "../../../../public/mariia-tsyliuryk.webp";
 import GeorgeBalabanian from "../../../../public/george-balabanian-criminal-lawyer.jpg"
-import HazelWood from "../../../../public/hazel-wood.avif";
-import MaksymKachurovsky from "../../../../public/maksym-kachurovsky.avif";
-import YosefAsmat from "../../../../public/yosef-asmat.avif";
+import HazelWood from "../../../../public/hazel-wood.webp";
+import MaksymKachurovsky from "../../../../public/maksym-kachurovsky.webp";
+import YosefAsmat from "../../../../public/yosef-asmat.webp";
 
 import type { Metadata } from "next";
 
