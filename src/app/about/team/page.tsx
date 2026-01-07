@@ -11,6 +11,9 @@ import AlexanderSurgenor from "../../../../public/alexander-surgenor-criminal-la
 import ChrisMacleod from "../../../../public/chris-macleod-criminal-lawyer.webp";
 import MariiaTsyliuryk from "../../../../public/mariia-tsyliuryk.webp";
 import GeorgeBalabanian from "../../../../public/george-balabanian-criminal-lawyer.jpg"
+import HazelWood from "../../../../public/hazel-wood.avif";
+import MaksymKachurovsky from "../../../../public/maksym-kachurovsky.avif";
+import YosefAsmat from "../../../../public/yosef-asmat.avif";
 
 import type { Metadata } from "next";
 
@@ -61,20 +64,20 @@ export default function Page() {
                         />
                         <h2 className={styles.teamHeading}>George Balabanian</h2>
                         <h3 className={styles.teamSubheading}>Criminal Defence Lawyer</h3>
-                        <p className={styles.teamCopy}>Bio coming soon.</p>
+                        <p className={styles.teamCopy}>George was born and raised in Montreal and was called to the bar in Saskatchewan in 2013 and British Columbia in 2015. He holds two law degrees and a Ph.D. in historical linguistics from the University of Pennsylvania, where he also lectured on Western Armenian. Before focusing on criminal law, George’s practice centered on class actions. A polyglot and avid hiker, he has explored dozens of countries, 45 U.S. states, and 9 Canadian provinces. In his spare time, Dr. Balabanian writes scholarly articles and stays engaged with research.</p>
                     </article>
 
                     <article className={styles.teamCard}>
                         <Image 
-                            alt="Chris MacLeod, Criminal Lawyer"
+                            alt="Hazel Wood, Articling Student"
                             width={300}
                             height={206}
                             src={ChrisMacleod}
                             className={styles.teamPhoto}
                         />
-                        <h2 className={styles.teamHeading}>Chris MacLeod</h2>
-                        <h3 className={styles.teamSubheading}>Criminal Lawyer</h3>
-                        <p className={styles.teamCopy}>A distinguished member of the Law Society of Saskatchewan, Chris MacLeod has been a dedicated legal professional since his admission to the Bar of Saskatchewan in 1984. He holds a Bachelor of Administration from the University of Regina, graduating in 1983, and earned his LL.B. from the University of Saskatchewan the same year. Chris brings decades of experience and a profound commitment to the practice of criminal law.</p>
+                        <h2 className={styles.teamHeading}>Hazel Wood 木柔雅</h2>
+                        <h3 className={styles.teamSubheading}>Articling Student</h3>
+                        <p className={styles.teamCopy}>Hazel Wood graduated with a Bachelor of Science with Honours in Psychology and Law (Qualifying Law Degree) from the University of Kent in the United Kingdom in 2018. She has gained over six years of experience in personal injury, criminal law, and police matters. She has worked in a wide range of legal and administrative roles with the Toronto Police Association and in plaintiff personal injury firms in Toronto. Hazel brings strong skills in client relations, case management, and legal research. She is currently completing her articles and is a candidate with the Law Society of Ontario. Hazel is originally from Hong Kong and is fluent in both English and Cantonese.</p>
                     </article>
 
                     <article className={styles.teamCard}>
@@ -92,19 +95,6 @@ export default function Page() {
 
                     <article className={styles.teamCard}>
                         <Image 
-                            alt="Bailey Johnson, Criminal Law Research Assistant"
-                            width={300}
-                            height={206}
-                            src={BaileyJohnson}
-                            className={styles.teamPhoto}
-                        />
-                        <h2 className={styles.teamHeading}>Bailey Johnson</h2>
-                        <h3 className={styles.teamSubheading}>Research Assistant</h3>
-                        <p className={styles.teamCopy}>Bailey Johnson is pursuing his Honours Degree in Political Science, specializing in Constitutional Law and Canadian Federalism. His analytical skills and in-depth knowledge in political science bring valuable insights to research projects and drive understanding of complex legal concepts.</p>
-                    </article>
-
-                    <article className={styles.teamCard}>
-                        <Image 
                             alt="Tanner Olheiser, Criminal Law Marketing Manager"
                             width={300}
                             height={206}
@@ -115,6 +105,35 @@ export default function Page() {
                         <h3 className={styles.teamSubheading}>Marketing Manager</h3>
                         <p className={styles.teamCopy}>Tanner Olheiser, with a diploma in Interactive Design & Technology from Saskatchewan Polytechnic, previously worked as a Business Intelligence Assistant at sMedia. He currently leverages his knowledge of internet marketing and analytics to advance Nicholas Robinson’s marketing strategies and enhance brand awareness.</p>
                     </article>
+
+                    <article className={styles.teamCard}>
+                        <Image 
+                            alt="Yosef Asmat, Criminal Law Legal Draftsman & Marketing Expert"
+                            width={300}
+                            height={206}
+                            src={TannerOlheiser}
+                            className={styles.teamPhoto}
+                        />
+                        <h2 className={styles.teamHeading}>Yosef Asmat</h2>
+                        <h3 className={styles.teamSubheading}>Legal Draftsman & Marketing Expert</h3>
+                        <p className={styles.teamCopy}>Yosef completed a legal clinic at a full-service corporate law firm in downtown Toronto, and worked as an intern for a class action law firm. He also brings over five years of business development experience in the consulting, SAAS, and home services industries. Drawing on his background in sales, Yosef he currently advances the firm's client acquisition strategy whilst also contributing to case management and legal research.</p>
+                    </article>
+
+                    <article className={styles.teamCard}>
+                        <Image 
+                            alt="Maksym Kachurovsky, Criminal Law Receivables & Finance Manager"
+                            width={300}
+                            height={206}
+                            src={TannerOlheiser}
+                            className={styles.teamPhoto}
+                        />
+                        <h2 className={styles.teamHeading}>Maksym Kachurovsky</h2>
+                        <h3 className={styles.teamSubheading}>Receivables & Finance Manager</h3>
+                        <p className={styles.teamCopy}>Maksym Kachurovskyi is pursuing a Bachelor of Commerce (Honors) degree with a concentration in International Business from Carleton University’s Sprott School of Business. Fluent in English, Ukrainian, and Russian, Maksym brings a global perspective and strong financial acumen to his work. He contributes through careful financial reporting and supporting operational planning, helping strengthen the firm’s fiscal management and efficiency.</p>
+                    </article>
+                    
+
+
                 </section>
                 <aside className={styles.form}>
                     <LeadForm />
