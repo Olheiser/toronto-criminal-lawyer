@@ -175,9 +175,16 @@
         display: none; /* Hidden by default */
         min-width: 250px;
     }
-
+/*
     .dropdown li {
         line-height: 40px;
+    }*/
+    .dropdown li {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .dropdown li:last-child {
+        margin-bottom: 0; /* Remove padding after the last item */
     }
 
     li:hover .dropdown {

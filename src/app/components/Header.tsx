@@ -22,9 +22,9 @@ const Header = () => {
                     <HamburgerMenu />
                 </nav>
                 <div className={styles.navCTA}>
-                    <a href="tel:6476972876" className={styles.navCTALink}>
+                    <a href="tel:6473722661" className={styles.navCTALink}>
                     <button className={styles.navCTAButton}>
-                        <span className={styles.navCTATopRow}>(647) 697-2876</span>
+                        <span className={styles.navCTATopRow}>(647) 372-2661</span>
                         <span className={styles.navCTABottomRow}>FREE CONSULTATION</span>
                     </button>
                     </a>

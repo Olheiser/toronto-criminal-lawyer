@@ -2,9 +2,9 @@
 
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import styles from '@/styles/LeadForm.module.css';
+import styles from '@/styles/AdForm.module.css';
 
-const LeadForm = () => {
+const AdForm = () => {
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const form = useRef<HTMLFormElement | null>(null);
@@ -18,7 +18,7 @@ const LeadForm = () => {
         }
 
         emailjs
-            .sendForm("service_zlvlw4s", "template_xvkv9vq", form.current, {
+            .sendForm("service_zlvlw4s", "template_igqv00e", form.current, {
                 publicKey: "AP4HXf2HPRERJu4fd"
             })
             .then(
@@ -37,21 +37,15 @@ const LeadForm = () => {
 
     return (
         <form className={styles.form} onSubmit={handleSubmit} ref={form}>
-            <h3>Let Us Call You Back</h3>
-            <label htmlFor="fullName">Full Name</label>
             <input type="text" name="name" id="name" 
                 required placeholder="Your Name..."/>
 
-            <label htmlFor="email">Email Address</label>
             <input type="email" name="email" id="email" required placeholder="Your Email Address..." pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
 
-            <label htmlFor="subject">How Can We Help You?</label>
             <input type="text" name="subject" id="subject" required placeholder="Subject..."/>
 
-            <label htmlFor="phone">Phone Number</label>
             <input type="tel" name="phone" id="phone" required placeholder="Your Phone Number..."/>
 
-            <label htmlFor="message">Message</label>
             <textarea name="message" id="message" required placeholder="Your Message..."></textarea>
 
             <div className={styles.checkboxContainer}>
@@ -72,4 +66,4 @@ const LeadForm = () => {
     )
 }
 
-export default LeadForm;
+export default AdForm;

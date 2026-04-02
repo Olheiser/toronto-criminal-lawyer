@@ -2,9 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import styles from "@/styles/Footer.module.css";
+//import adStyles from "@/styles/AdHdrFtr.module.css";
 import logo from "../../../public/toronto-criminal-lawyer.webp";
 
-const Footer = () => {
+const AdFooter = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -42,28 +43,29 @@ const Footer = () => {
                         <div className={styles.footerSitemap}>
                             <h2>Sitemap</h2>
                             <ul className={styles.footerUl}>
-                                <li><Link href="/criminal-process/can-i-beat-the-charges">Can I Beat the Charges?</Link></li>
-                                <li><Link href="/criminal-process/should-i-plead-guilty">Should I Plead Guilty?</Link></li>
-                                <li><Link href="/criminal-process/your-rights">Your Rights</Link></li>
-                                <li><Link href="/criminal-process/faq">FAQ</Link></li>
-                                <li><Link href="/criminal-process/penalties-and-sentencing">Penalties and Sentencing</Link></li>
-                                <li><Link href="/criminal-process">Criminal Process</Link></li>
-                                <li><Link href="/about">About</Link></li>
-                                <li><Link href="/about/reported-cases">Reported Cases</Link></li>
-                                <li><Link href="/about/team">Team</Link></li>
+                                <li><Link href="/main/criminal-process">Criminal Process</Link></li>
+                                <li><Link href="/main/criminal-process/can-i-beat-the-charges">Can I Beat the Charges?</Link></li>
+                                <li><Link href="/main/criminal-process/should-i-plead-guilty">Should I Plead Guilty?</Link></li>
+                                <li><Link href="/main/criminal-process/how-to-get-your-drivers-licence-reinstated">How to Get Your Driver&apos;s Licence Reinstated</Link></li>
+                                <li><Link href="/main/criminal-process/your-rights">Your Rights</Link></li>
+                                <li><Link href="/main/criminal-process/faq">FAQ</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing">Penalties &amp; Sentencing</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing/cannabis-dui-charges">Cannabis DUI Charges</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing/commercial-driver-dui">Commercial Driver DUI</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing/defences-available-for-dui-charges">Defences Available for DUI Charges</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing/repeat-dui-charges">Repeat DUI Charges</Link></li>
+                                <li><Link href="/main/penalties-and-sentencing/young-and-novice-driver-dui">Young and Novice Driver DUI</Link></li>
                             </ul>
                         </div>
                         <div className={styles.footerPracticeAreas}>
                             <h2><Link href="/practice-areas">Practice Areas</Link></h2>
                             <ul className={styles.footerUl}>
-                                <li><Link href="/practice-areas/driving-offences/impaired-driving">Impaired Driving</Link></li>
-                                <li><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></li>
-                                <li><Link href="/practice-areas/criminal-harassment">Criminal Harassment</Link></li>
-                                <li><Link href="/practice-areas/assault-charges/assault">Assault</Link></li>
-                                <li><Link href="/practice-areas/drug-charges/possession-of-narcotics">Possession of Narcotics</Link></li>
-                                <li><Link href="/practice-areas/young-offenders">Young Offenders</Link></li>
-                                <li><Link href="/practice-areas/property-crimes/robbery">Robbery</Link></li>
-                                <li><Link href="/practice-areas/fraud-charges/fraud">Fraud</Link></li>
+                                <li><Link href="/main/practice-areas/impaired-driving">Impaired Driving</Link></li>
+                                <li><Link href="/main/practice-areas/dangerous-driving">Dangerous Driving</Link></li>
+                                <li><Link href="/main/practice-areas/failure-to-stop-at-an-accident">Failure to Stop at an Accident</Link></li>
+                                <li><Link href="/main/practice-areas/flight-from-a-peace-officer">Flight From Peace Officer</Link></li>
+                                <li><Link href="/main/practice-areas/refusing-a-breathalyzer-or-drug-test">Refusing a Breathalyzer or Drug Test</Link></li>
+                                <li><Link href="/main/practice-areas/driving-over-08">Driving Over .08</Link></li>
                             </ul>
                         </div>
                     </section>
@@ -72,7 +74,7 @@ const Footer = () => {
             </div>
             <section className={styles.legalContainer}>
                 <div className={styles.legalDiv}>
-                    <p className={styles.copyright}>Copyright © 2024 Toronto Criminal Law. All Rights Reserved. <a href="https://directory.canadacriminallawyer.ca/terms-of-service/">Terms of Service.</a> <a href="https://canadacriminallawyer.ca/privacy-policy/">Privacy Policy and Website Agreement.</a></p>
+                    <p className={styles.copyright}>Copyright © 2024 Toronto Impaired Driving Lawyer. All Rights Reserved. <a href="https://directory.canadacriminallawyer.ca/terms-of-service/">Terms of Service.</a> <a href="https://canadacriminallawyer.ca/privacy-policy/">Privacy Policy and Website Agreement.</a></p>
                     <p className={styles.termsOfService}><em>The information provided on this website is Not Legal Advice, is provided for discussion purposes only, may not be accurate and is not intended to substitute for the advice of a lawyer. Reliance upon any information provided would not be grounds to advance a claim against N.P. Robinson Law Professional Corporation. You would need to retain a lawyer to discuss your specific fact scenario for a formal legal opinion.</em></p>
                 </div>
             </section>
@@ -80,5 +82,5 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default AdFooter;
 
