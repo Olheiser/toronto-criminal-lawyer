@@ -105,7 +105,7 @@ const HamburgerMenu = () => {
                     <ul className={`${styles.dropdown} ${
                             activeDropdown === 0 ? styles.showDropdown : ""
                         }`}>
-                        <li><Link href="/about/team" className={pathname === "/about/team" ? styles.active : ""}>Team</Link></li>
+                        {/*<li><Link href="/about/team" className={pathname === "/about/team" ? styles.active : ""}>Team</Link></li>*/}
                         <li><Link href="/about/reported-cases" className={pathname === "/about/reported-cases" ? styles.active : ""}>Reported Cases</Link></li>
                     </ul>
                 </li>
