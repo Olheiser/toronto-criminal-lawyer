@@ -127,12 +127,14 @@
 }
 
 .heroContent h1 {
+    color: #bb0000;
     font-size: 5rem;
+    font-size: clamp(2.3rem, 7vw, 5rem);
 }
 
 .heroContent h2 {
     color: #ffffff;
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 5vw, 4rem);
 }
 
 .introButton {
