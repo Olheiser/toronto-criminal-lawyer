@@ -180,7 +180,7 @@
   padding: 0 2rem;
   position: relative;
   z-index: 3;
-  transform: translateY(-50%); /* This creates the 50% overlap */
+  transform: translateY(-10%); /* This creates the 50% overlap */
 }
 
 .heroCard {
@@ -234,4 +234,10 @@
     flex-direction: row;
     gap: 30px;
     padding-top: 1.1rem;
+}
+
+@media screen and (min-width: 968px) {
+  .heroCards {
+  transform: translateY(-50%); /* This creates the 50% overlap */
+}
 }
