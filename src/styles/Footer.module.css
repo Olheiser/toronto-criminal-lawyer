@@ -66,6 +66,11 @@
 
 .footerUl li {
     line-height: 43px;
+    color: #212529;
+}
+
+.footerContact li, .footerAddress li {
+    color: #212529;
 }
 
 .footerUl li a:hover {
