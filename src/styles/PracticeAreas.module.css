@@ -4,22 +4,25 @@
    ============================================================================= */
 
 /* ── Tokens ──────────────────────────────────────────────────────────────────── */
-:root {
+
+/* ── Tokens ──────────────────────────────────────────────────────────────────── */
+.pa-section,
+.pa-section-mobile {
   --pa-bg:            #1a1a1a;   /* deep charcoal — section background           */
-  --pa-surface:       #242424;   /* same as bg — accordion triggers (no contrast)*/
-  --pa-surface-hover: #2d2d2d;   /* subtle hover state for accordion triggers    */
+  --pa-surface:       #242424;   /* slightly lighter — accordion triggers        */
+  --pa-surface-hover: #2d2d2d;   /* hover state for accordion triggers           */
   --pa-border:        rgba(255, 255, 255, 0.07);
   --pa-red:           #bb0000;   /* primary accent                               */
   --pa-red-hover:     #d40000;   /* slightly brighter for hover states           */
   --pa-text-primary:  #f0ece4;
-  --pa-text-muted:    #e8e4df;
+  --pa-text-muted:    #d6d2cd;
   --pa-text-subtle:   #5e5a56;
-  --pa-max-width:     1700px;    /* section max-width for ultra-wide screens     */
+  --pa-max-width:     1600px;
   --pa-thumb-height:  260px;
-  --pa-featured-height: min-height;
+  --pa-featured-height: 420px;
   --pa-transition:    0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --pa-font-serif:    "Optima Nova LT", "Times New Roman", serif;
-  --pa-font-sans:     "Roboto", Helvetica, Arial, sans-serif;
+  --pa-font-serif:    "Georgia", "Times New Roman", serif;
+  --pa-font-sans:     "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* ── Responsive visibility ───────────────────────────────────────────────────── */
