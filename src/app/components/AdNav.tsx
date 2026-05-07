@@ -5,7 +5,7 @@ import styles from "../../styles/AdHdrFtr.module.css";
 //import adStyles from "@/styles/AdHdrFtr.module.css";
 import logo from "../../../public/toronto-criminal-lawyer.webp";
 import cbc from "../../../public/cbc-logo.png";
-import reviewBadge from "../../../public/review-widget.png";
+import reviewBadge from "../../../public/review-badge-v2.png";
 import globalNews from "../../../public/global-news-logo-white.png"
 import Link from "next/link";
 //import GoogleBusinessProfileWidget from "./GoogleProfile";
