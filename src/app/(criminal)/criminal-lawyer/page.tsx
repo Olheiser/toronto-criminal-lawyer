@@ -7,6 +7,7 @@ import clientFocused from "../../../../public/client-focused-representation.webp
 import availability from "../../../../public/availability.webp";
 import trackRecord from "../../../../public/track-record.webp";
 import paymentFlexibility from "../../../../public/payment-flexibility.webp";
+import PracticeAreasSection from "@/app/components/PracticeAreaDynamic";
 import FAQAccordion from "@/app/components/FAQAccordion";
 import logo from "../../../../public/logo-white-type.png";
 import pro from "../../../../public/professional.jpg";
@@ -85,44 +86,8 @@ export default function Page() {
                 </aside>
             </div>
         </main>
-        <section className={styles.duiSection}>
-            <div className={styles.duiContainer}>
 
-                <h2 className={styles.sectionTitle}>Practice Areas</h2>
-                <h3 className={styles.sectionSubheading}>We Get Winning Results</h3>
-                <div className={styles.duiGrid}>
-                    <div className={`${styles.duiCard} ${styles.card1}`}>
-                        <h3>Assault</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card2}`}>
-                        <h3>Sexual Assault</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card3}`}>
-                        <h3>Impaired Driving</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card4}`}>
-                        <h3>Fraud</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card5}`}>
-                        <h3>Drug Charges</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card6}`}>
-                        <h3>Theft</h3>
-                    </div> 
-                    <div className={`${styles.duiCard} ${styles.card7}`}>
-                        <h3>Young Offenders</h3>
-                    </div>
-                    <div className={`${styles.duiCard} ${styles.card8}`}>
-                        <h3>Firearm Offences</h3>
-                    </div>
-                    <div className={`${styles.duiCard} ${styles.card9}`}>
-                        <h3>Homicide</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
+        <PracticeAreasSection />
 
 
         <section className={styles.duiLawyerSection}>
