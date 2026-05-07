@@ -21,8 +21,8 @@
   --pa-thumb-height:  260px;
   --pa-featured-height: 420px;
   --pa-transition:    0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --pa-font-serif:    "Georgia", "Times New Roman", serif;
-  --pa-font-sans:     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --pa-font-serif:    "Optima Nova LT", "Times New Roman", serif;
+  --pa-font-sans:     "Roboto", Helvetica, Arial, sans-serif;
 }
 
 /* ── Responsive visibility ───────────────────────────────────────────────────── */
