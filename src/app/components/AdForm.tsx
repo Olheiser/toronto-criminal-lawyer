@@ -142,7 +142,7 @@ const AdForm = () => {
 
             {formSubmitted && (
                 <p className={styles.successMessage}>
-                    Thank you — we've received your message and will be in touch shortly.
+                    Thank you — we&apos;ve received your message and will be in touch shortly.
                 </p>
             )}
 
