@@ -6,7 +6,6 @@ import PageHeader from "../../../components/PageHeader";
 
 import NicholasRobinson from "../../../../../public/nicholas-robinson-criminal-lawyer.webp";
 import TannerOlheiser from "../../../../../public/tanner-olheiser.webp";
-import AlexanderSurgenor from "../../../../../public/alexander-surgenor-criminal-lawyer.webp";
 import MariiaTsyliuryk from "../../../../../public/mariia-tsyliuryk.webp";
 import GeorgeBalabanian from "../../../../../public/george-balabanian-criminal-lawyer.jpg"
 import HazelWood from "../../../../../public/hazel-wood.webp";
@@ -37,19 +36,6 @@ export default function Page() {
                         <h2 className={styles.teamHeading}>Nicholas Robinson</h2>
                         <h3 className={styles.teamSubheading}>Criminal Defence Lawyer</h3>
                         <p className={styles.teamCopy}>A proud member of both the Law Society of Saskatchewan and the Law Society of Upper Canada, Nicholas graduated from McGill University&apos;s Faculty of Law in 2008, earning Bachelor degrees in both Civil and Common Laws. He was called to the Bar of Saskatchewan in 2009 and to the Bar of Ontario in 2010. In 2014, he expanded his practice by opening an office in Regina, Saskatchewan.</p>
-                    </article>
-
-                    <article className={styles.teamCard}>
-                        <Image 
-                            alt="Alexander Surgenor, Criminal Lawyer"
-                            width={300}
-                            height={206}
-                            src={AlexanderSurgenor}
-                            className={styles.teamPhoto}
-                        />
-                        <h2 className={styles.teamHeading}>Alexander Surgenor</h2>
-                        <h3 className={styles.teamSubheading}>Criminal Defence Lawyer</h3>
-                        <p className={styles.teamCopy}>Alexander graduated from Osgoode Hall Law School in 2022 after attending the University of Toronto, where he earned his Honours Bachelor of Arts in 2018. He was called to the bar in Ontario in 2024. He joins us after articling at a boutique firm in Yorkville, Toronto where he sharpened his client service skills.</p>
                     </article>
 
                     <article className={styles.teamCard}>
