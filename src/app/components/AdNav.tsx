@@ -10,7 +10,11 @@ import globalNews from "../../../public/global-news-logo-white.png"
 import Link from "next/link";
 //import GoogleBusinessProfileWidget from "./GoogleProfile";
 
-const AdNav = () => {
+interface AdNavProps {
+  city: string;
+}
+
+const AdNav = ({city}: AdNavProps) => {
     return (
         <>
         <header className={styles.header}>
@@ -36,7 +40,7 @@ const AdNav = () => {
         <section className={styles.heroImage}>
                 <div className={styles.heroContent}>
                     <h2>We Can Beat It</h2>
-                    <h1>Top-Rated Criminal Defence <br/>in the Greater Toronto Area</h1>
+                    <h1>Top-Rated Criminal Defence <br/>{city}</h1>
                     <div className={styles.asSeenRow}>
                         <p className={styles.asSeen}>As Seen On</p>
                         <div className={styles.newsRow}>

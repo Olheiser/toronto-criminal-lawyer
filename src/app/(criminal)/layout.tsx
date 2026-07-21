@@ -1,4 +1,3 @@
-import AdNav from "../components/AdNav";
 import AdFooter from "../components/AdFooter";
 import ScrollToTop from "../components/ScrollToTop";
 // import CalendlyWidget from "../components/CalendlyButton";
@@ -43,7 +42,6 @@ export default function RootLayout({
   />
 </head>
       <body id="root">
-        <AdNav />
          {/* <PageHeader title="About" /> */}
         {children}
         <ScrollToTop />

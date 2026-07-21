@@ -21,14 +21,14 @@ import AdNav from "../../components/AdNav";
 import type { Metadata } from "next";  // ← Keep this one only
 
 export const metadata: Metadata = {
-  title: "Nicholas Robinson | Toronto Criminal Lawyer",
-  description: "Explore your defence options for your criminal charge with expert guidance from a Toronto criuminal lawyer. Call (647) 372-2661 for a free consultation today.",
+  title: "Nicholas Robinson | Newmarket Criminal Lawyer",
+  description: "Explore your defence options for your criminal charge with expert guidance from a Newmarket Criminal Lawyer. Call (647) 372-2661 for a free consultation today.",
 };
 
 export default function Page() {
     return (
         <>
-        <AdNav city="in the Greater Toronto Area" />
+        <AdNav city="in Newmarket" />
         <main className={styles.pageBody}>
 
             <div className={styles.pageContainer}>
@@ -37,7 +37,7 @@ export default function Page() {
                 <h4>Strategic Defence for All Criminal Charges</h4>
                 <h3>Experienced Advocacy Backed by a Strong Trial Record</h3>
                 <p>Nicholas Robinson represents clients facing a wide spectrum of criminal charges, with offices in Toronto, Ontario, and Regina, Saskatchewan.</p>
-                <p>With over 1,300 cases under his belt over the last 17 years, Nicholas brings unparalleled experience to every client he serves. Drawing on a history of over 100 trials successfully concluded, Nicholas brings a proven record of victory and assurance to the clients he serves.</p>
+                <p>With over 1,400 cases under his belt over the last 17 years, Nicholas brings unparalleled experience to every client he serves. Drawing on a history of over 100 trials successfully concluded, Nicholas brings a proven record of victory and assurance to the clients he serves.</p>
                 <p>Nicholas has a broad range of experience, from litigating complex legal disputes against major corporations to providing robust defence for clients facing legal challenges. No case is too complex or too simple &#x2d; Nicholas is unwavering in his commitment to safeguard your rights and protect your future. </p>
                 <p>Call Nicholas today to experience the difference that a veteran criminal defence lawyer, with a proven record of victory, can make in your case.</p>
                 <div className={styles.ppcCards}>
@@ -98,7 +98,7 @@ export default function Page() {
         <div className={styles.imageWrapper}>
           <Image
             src={pro} // Replace with your image path
-            alt="Experienced DUI Lawyer in Toronto"
+            alt="Experienced Criminal Lawyer in Newmarket"
             fill
             className={styles.image}
             priority
@@ -209,7 +209,7 @@ export default function Page() {
 
           {/* Paragraph */}
           <p className={styles.contactParagraph}>
-            With 14+ years of DUI defence experience, Nicholas Robinson is one of Toronto&apos; most trusted impaired driving lawyers. He has a proven track record of success in trials and negotiations, helping clients avoid licence suspensions, fines, and criminal records. Serving Toronto and the GTA, Nicholas provides aggressive, strategic defence when you need it most.
+            With 14+ years of criminal defence experience, Nicholas Robinson is one of Newmarket&apos;s most trusted criminal lawyers. He has a proven track record of success in trials and negotiations, helping clients avoid licence suspensions, fines, and criminal records. Serving Toronto and the GTA, Nicholas provides aggressive, strategic defence when you need it most.
           </p>
 
           {/* Form */}
