@@ -37,7 +37,7 @@ const AdNav = ({city}: AdNavProps) => {
                 </div>
             </div> 
         </header>
-        <section className={styles.heroImage}>
+        <section className={city == "in Newmarket" ? styles.heroImageNewmarket : styles.heroImage}>
                 <div className={styles.heroContent}>
                     <h2>We Can Beat It</h2>
                     <h1>Top-Rated Criminal Defence <br/>{city}</h1>

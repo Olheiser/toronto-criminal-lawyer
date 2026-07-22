@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../../../styles/adSubpage.module.css";
+import styles from "../../../styles/adSubpageNewmarket.module.css";
 //import updateStyles from "@/styles/Ad.module.css";
 import LeadForm from "../../components/LeadForm";
 import Image from "next/image";

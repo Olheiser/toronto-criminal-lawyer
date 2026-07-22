@@ -114,6 +114,25 @@
     display: flex;
 }
 
+.heroImageNewmarket {
+    height: calc(100vh - 75px);
+    min-height: 600px;
+    /* Background Image */
+    /*background-image: url('/public/dui-lawyer-police-stop-optimized.webp');*/
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),  /* Dark at top */
+      rgba(0, 0, 0, 0.4)   /* Slightly lighter at bottom */
+    ),
+    url('https://imagedelivery.net/8au6u53Ph6mHP5o5AhlVXQ/1a6dd973-d302-400a-2f53-0a72eaf2e300/public');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center; /* Centers the heroContent horizontally */
+  align-items: center; /* Centers vertically if needed */
+  width: 100%;
+    display: flex;
+}
 
 
 .heroContent {
