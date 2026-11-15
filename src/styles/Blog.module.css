@@ -1,0 +1,185 @@
+/* =====================================================================
+   BLOG STYLES
+   ---------------------------------------------------------------------
+   Used by /blog, /blog/page/N and /blog/<slug>.
+   Page layout (pageBody / pageContainer / pageContent), card look
+   (categoryCard / categoryHeading / learnMoreLink) and body typography
+   all come from Subpage.module.css — this file only adds blog-specific
+   pieces. Breakpoints mirror Subpage.module.css (800px / 1100px).
+   ===================================================================== */
+
+/* ----- Breadcrumbs: allow long post titles to wrap on small screens ----- */
+.breadcrumbsWrap {
+    flex-wrap: wrap;
+    row-gap: 6px;
+}
+
+/* ======================================= */
+/* -----        Blog Index         ----- */
+/* ======================================= */
+
+/* The index grid uses the full container width (no lead form aside), so
+   drop .pageContent's max-width and its ≥1100px right margin. */
+section.indexContent {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+
+.postGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .postGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .postGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card — combined with Subpage .categoryCard for shadow/gradient.
+   .categoryCard sets width: calc(50% - 10px) at ≥800px for its flex layout;
+   inside the grid the card must fill its cell instead. */
+.postGrid > .postCard {
+    width: auto;
+}
+
+.postCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0 20px 0;
+}
+
+.postCardImageLink {
+    display: block;
+    overflow: hidden;
+}
+
+.postCardImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.postCardBody {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px 20px 0 20px;
+}
+
+.postCardTitle {
+    font-size: 23px;
+    line-height: 30px;
+    padding-bottom: 6px;
+}
+
+.postCardExcerpt {
+    flex-grow: 1;
+    color: #333333;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
+/* Date line — shared by cards and the post template */
+.postDate {
+    display: block;
+    font-size: 15px;
+    color: #666666;
+    padding-bottom: 10px;
+}
+
+/* ----- Empty state ----- */
+.emptyState {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.emptyState p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+/* Global .generalButtonLink inside .pageContent picks up the teal link
+   colour from Subpage.module.css — keep the button text white. */
+.emptyState .emptyCta,
+.emptyState .emptyCta:hover {
+    color: #ffffff;
+}
+
+/* ----- Pagination ----- */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 40px;
+}
+
+.pagination a,
+.pageCurrent {
+    display: inline-block;
+    min-width: 42px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+}
+
+.pagination a {
+    color: #007b8b;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pagination a:hover {
+    color: #ffffff;
+    background: #bb0000;
+}
+
+.pageCurrent {
+    color: #ffffff;
+    background: #bb0000;
+    font-weight: 700;
+}
+
+/* ======================================= */
+/* -----        Single Post        ----- */
+/* ======================================= */
+
+.postFeaturedImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 20px 0;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.postBody h2 {
+    padding-top: 20px;
+}
+
+.postBody h3 {
+    padding-top: 10px;
+}
+
+.backToBlog {
+    padding-top: 30px;
+}

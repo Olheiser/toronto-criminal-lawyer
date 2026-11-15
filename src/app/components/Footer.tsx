@@ -50,7 +50,8 @@ const Footer = () => {
                                 <li><Link href="/criminal-process">Criminal Process</Link></li>
                                 <li><Link href="/about">About</Link></li>
                                 <li><Link href="/about/reported-cases">Reported Cases</Link></li>
-                                
+                                <li><Link href="/blog">Blog</Link></li>
+
                             </ul>
                         </div>
                         <div className={styles.footerPracticeAreas}>

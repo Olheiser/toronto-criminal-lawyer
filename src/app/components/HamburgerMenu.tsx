@@ -267,6 +267,11 @@ const HamburgerMenu = () => {
                         <li><Link href="/practice-areas/young-offenders">Young Offenders</Link></li>
                     </ul>
                 </li>
+                <li>
+                    <div className={styles.menuItemRow}>
+                        <Link href="/blog" className={pathname.startsWith("/blog") ? styles.active : ""}>Blog</Link>
+                    </div>
+                </li>
             </ul>
         </div>
     )

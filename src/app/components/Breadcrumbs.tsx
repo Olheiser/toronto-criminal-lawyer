@@ -5,9 +5,16 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "../../styles/PageHeader.module.css";
 
-type Breadcrumb = { name: string; href: string | null };
+export type Breadcrumb = { name: string; href: string | null };
 
-const Breadcrumbs: React.FC = () => {
+interface BreadcrumbsProps {
+  /** Optional explicit crumbs (used by blog pages). When omitted, crumbs are derived from the URL as before. */
+  items?: Breadcrumb[];
+  /** Optional extra class for the <ul> */
+  className?: string;
+}
+
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className }) => {
   const pathname = usePathname();
 
   const generateBreadcrumbs = (): Breadcrumb[] => {
@@ -43,10 +50,10 @@ const Breadcrumbs: React.FC = () => {
     return [{ name: "Home", href: "/" }, ...breadcrumbs];
   };
 
-  const breadcrumbs = generateBreadcrumbs();
+  const breadcrumbs = items ?? generateBreadcrumbs();
 
   return (
-    <ul className={styles.breadcrumbs}>
+    <ul className={className ? `${styles.breadcrumbs} ${className}` : styles.breadcrumbs}>
       {breadcrumbs.map((crumb, index) => (
         <li
           key={index}
