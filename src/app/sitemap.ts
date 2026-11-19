@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { blogPagePath, getSortedPosts, getTotalPages } from '@/content/blog/posts'
+import { getSortedLocations } from '@/content/locations/locations'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://torontocriminallaw.net'
@@ -26,6 +27,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
   ]
+
+  // City pages — generated from src/content/locations/locations.ts (no manual edits needed)
+  const locationEntries: MetadataRoute.Sitemap = getSortedLocations().map((location) => ({
+    url: `${baseUrl}/${location.slug}`,
+    lastModified: new Date(location.dateModified),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
 
   return [
     // Homepage - Highest priority
@@ -189,6 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+    ...locationEntries,
     ...blogEntries,
   ]
 }

@@ -17,6 +17,7 @@ import thirdStep from "../../../public/third-step.webp";
 import criminalProcessPhoto from "../../../public/criminal-lawyer-criminal-process.webp";
 import LeadForm from "../components/LeadForm";
 import FAQAccordion from "../components/FAQAccordion";
+import { getSortedLocations } from "@/content/locations/locations";
 import HandshakePhoto from "../../../public/criminal-lawyer-handshake.webp";
 
 // For security
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const nonce = (await headers()).get('x-nonce')
+  const serviceAreas = getSortedLocations()
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -600,6 +602,25 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* City pages — generated from src/content/locations/locations.ts */}
+      {serviceAreas.length > 0 && (
+        <section className={styles.serviceAreaRow}>
+          <div className={styles.serviceAreaContainer}>
+            <div className={styles.headingContainer}>
+              <h2 className={styles.sectionHeading}>Surrounding Areas We Serve</h2>
+              <h3 className={styles.sectionSubheading}>Criminal Defence Across the GTA</h3>
+            </div>
+            <ul className={styles.serviceAreaList}>
+              {serviceAreas.map((location) => (
+                <li key={location.slug}>
+                  <Link href={`/${location.slug}`}>{location.city} Criminal Lawyer</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className={styles.faqRow}>
         <div className={styles.faqContainer}>

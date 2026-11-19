@@ -12,7 +12,7 @@ Marketing / lead-generation website for a Toronto criminal defence lawyer (produ
 pnpm dev      # dev server (Turbopack) at http://localhost:3000
 pnpm build    # production build — also the de facto type check
 pnpm start    # serve the production build
-pnpm lint     # next lint (next/core-web-vitals + next/typescript)
+pnpm lint     # BROKEN on Next 16 (`next lint` was removed) — use `pnpm exec eslint <paths>`
 ```
 
 ## Architecture
@@ -21,7 +21,7 @@ pnpm lint     # next lint (next/core-web-vitals + next/typescript)
 `src/app/` has no top-level `layout.tsx`. Instead there are two route groups, each rendering its own `<html>`/`<body>`:
 
 - `(main)/` — the full organic site (home, `about/`, `criminal-process/`, `practice-areas/...`). Layout wraps pages in `Header` + `Footer`.
-- `(criminal)/` — paid-ad landing pages (`criminal-lawyer`, `newmarket-criminal-lawyer`). Layout uses `AdFooter` and no site header; pages use `AdNav`, `AdForm`, and `PracticeAreaDynamic` instead. Separate metadata.
+- `(criminal)/` — paid-ad landing pages (`criminal-lawyer`, `newmarket-criminal-defence`). Layout uses `AdFooter` and no site header; pages use `AdNav`, `AdForm`, and `PracticeAreaDynamic` instead. Separate metadata. `newmarket-criminal-defence` is `noindex` (it moved from `/newmarket-criminal-lawyer` to free that URL for the organic city page; `next.config.ts` temporarily redirects the old URL until the Newmarket city page is published).
 
 Because each group is a root layout, navigating between groups triggers a full page load. Tracking scripts (Google Tag Manager `GTM-KGMGGPD6` and Google Ads gtag `AW-653876065`) are duplicated in **both** layouts — change both when editing analytics.
 
@@ -55,6 +55,11 @@ Use `/new-post` (`.claude/commands/new-post.md`), or manually:
 2. Create `src/content/blog/posts/<slug>.tsx` — body JSX only, **no H1** (start at H2), Subpage classes (`contentList`, `contentBreak`), escape `'` as `&apos;`. Publish only the user's text — don't add CTA/closing paragraphs. Link cited sources. Phone number, where the text uses it, is **(647) 372-2661** (`tel:6473722661`); (647) 697-2876 on some older pages is outdated.
 3. Import it and add an entry to `posts` in `src/content/blog/posts.ts`.
 4. `pnpm lint && pnpm build` — confirm `/blog/<slug>` is built. Index, pagination and sitemap update automatically.
+
+### Location (city) pages
+City landing pages live at `/<city>-criminal-lawyer` and are data-driven: `src/content/locations/locations.ts` (registry, `Location` interface, shared `PRACTICE_AREAS`) + one data file per city in `src/content/locations/<slug>.ts`. The `(main)/[location]/page.tsx` route (`dynamicParams = false`; the segment is the full slug because Next can't match partial segments) renders `components/LocationPage.tsx` (styles: `src/styles/Location.module.css`; the lead form is `position: sticky` beside the content at ≥1100px). Sitemap, footer "Service Areas", the homepage "Surrounding Areas We Serve" block and cross-links between cities are generated from the registry.
+- Add one with `/new-location` (`.claude/commands/new-location.md`) — one city per run, drafted copy is approved by the user before files are written.
+- No Toronto page: the homepage is the Toronto page. Never claim a local office (schema uses the real Toronto address).
 
 ### Middleware caveat
 `src/app/middleware.ts` builds a nonce-based CSP, but Next.js only loads middleware from `src/middleware.ts` (or `src/proxy.ts` in Next 16), so this file is **not currently active**. If it is moved into place, its CSP (`script-src 'self' 'nonce-…'`, `img-src 'self'`, `connect-src` defaulting to self) would block GTM/gtag, Cloudflare images, and the Lawmatics fetch unless extended.

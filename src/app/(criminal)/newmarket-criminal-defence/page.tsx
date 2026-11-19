@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "../../../styles/adSubpageNewmarket.module.css";
+import styles from "@/styles/adSubpageNewmarket.module.css";
 //import updateStyles from "@/styles/Ad.module.css";
-import LeadForm from "../../components/LeadForm";
+import LeadForm from "@/app/components/LeadForm";
 import Image from "next/image";
 import clientFocused from "../../../../public/client-focused-representation.webp";
 import availability from "../../../../public/availability.webp";
@@ -13,7 +13,7 @@ import logo from "../../../../public/logo-white-type.png";
 import pro from "../../../../public/professional.jpg";
 import AdForm from "@/app/components/AdForm";
 import Script from 'next/script';
-import AdNav from "../../components/AdNav";
+import AdNav from "@/app/components/AdNav";
 
 
 //import ctaImage from "../../../../public/cta-row.avif";
@@ -23,6 +23,8 @@ import type { Metadata } from "next";  // ← Keep this one only
 export const metadata: Metadata = {
   title: "Nicholas Robinson | Newmarket Criminal Lawyer",
   description: "Explore your defence options for your criminal charge with expert guidance from a Newmarket Criminal Lawyer. Call (647) 372-2661 for a free consultation today.",
+  // Paid-ad landing page: keep it out of search so it doesn't compete with the organic /newmarket-criminal-lawyer city page.
+  robots: { index: false, follow: true },
 };
 
 export default function Page() {

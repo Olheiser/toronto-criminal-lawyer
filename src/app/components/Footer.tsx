@@ -3,8 +3,10 @@ import Link from "next/link";
 import Image from 'next/image';
 import styles from "@/styles/Footer.module.css";
 import logo from "../../../public/toronto-criminal-lawyer.webp";
+import { getSortedLocations } from "@/content/locations/locations";
 
 const Footer = () => {
+    const serviceAreas = getSortedLocations();
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -68,6 +70,17 @@ const Footer = () => {
                                 <li><Link href="/practice-areas/fraud-charges/fraud">Fraud</Link></li>
                             </ul>
                         </div>
+                        {/* Generated from src/content/locations/locations.ts */}
+                        {serviceAreas.length > 0 && (
+                            <div className={styles.footerPracticeAreas}>
+                                <h2>Service Areas</h2>
+                                <ul className={styles.footerUl}>
+                                    {serviceAreas.map((location) => (
+                                        <li key={location.slug}><Link href={`/${location.slug}`}>{location.city} Criminal Lawyer</Link></li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                     </section>
                 </section>
 
