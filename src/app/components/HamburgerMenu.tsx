@@ -160,6 +160,7 @@ const HamburgerMenu = () => {
                                         activeSubDropdown === 0 ? styles.showSubDropdown : ""
                                     }`}>
                                 <li><Link href="/practice-areas/assault-charges/assault" className={pathname === "/practice-areas/assault-charges/assault" ? styles.active : ""}>Assault</Link></li>
+                                <li><Link href="/practice-areas/assault-charges/uttering-threats" className={pathname === "/practice-areas/assault-charges/uttering-threats" ? styles.active : ""}>Uttering Threats</Link></li>
                             </ul>
                         </li>
                         {/* Submenu Level 1 -> Impaired Driving*/}

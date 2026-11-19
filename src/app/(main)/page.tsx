@@ -366,11 +366,10 @@ export default async function Home() {
             </article>
 
             <article className={styles.practiceCard}>
-              <h3>Uttering Threats</h3>
-              <p><strong>Uttering threats</strong> involves knowingly making threats to cause death, bodily harm, damage property, or harm animals.</p>
+              <h3><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></h3>
+              <p><strong><Link href="/practice-areas/assault-charges/uttering-threats">Uttering threats</Link></strong> involves knowingly making threats to cause death, bodily harm, damage property, or harm animals.</p>
               <span className={styles.readMore}>
-                <a href="https://torontocriminallaw.net/practice-areas/sexual-offences/sexual-assault/">Learn more about <strong>Uttering Threats Charges</strong>
-                </a>
+                <Link href="/practice-areas/assault-charges/uttering-threats">Learn more about <strong>Uttering Threats Charges</strong></Link>
               </span><br/>
               <hr className={styles.blockEnd}></hr>
             </article>

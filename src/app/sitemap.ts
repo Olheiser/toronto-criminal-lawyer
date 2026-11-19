@@ -124,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/practice-areas/assault-charges/uttering-threats`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/practice-areas/driving-offences`,
       lastModified: new Date(),
       changeFrequency: 'weekly',

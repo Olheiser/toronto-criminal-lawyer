@@ -66,10 +66,10 @@ export default function Page() {
                     </article>
 
                     <article className={styles.categoryCard}>
-                        <h2 className={styles.categoryHeading}>Uttering Threats</h2>
-                        <p className={styles.categoryCopy}><strong>Uttering Threats</strong> involves communicating an intention to cause harm or damage to a person or property.</p>
+                        <h2 className={styles.categoryHeading}><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></h2>
+                        <p className={styles.categoryCopy}><strong><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></strong> involves communicating an intention to cause harm or damage to a person or property.</p>
                         <p className={styles.categoryLearnMore}>
-                            Learn more about <strong>Uttering Threats</strong>
+                            Learn more about <strong><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></strong>
                         </p>                 
                     </article>    
                 </section>

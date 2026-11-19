@@ -46,6 +46,9 @@ Data-driven from `src/content/blog/posts.ts` (registry + helpers + author/publis
 - Blog pages pass explicit `breadcrumbs` to `PageHeader` (optional prop; other pages still derive crumbs from the URL).
 - URLs have no trailing slash (Next default), matching the rest of the site.
 
+### Adding a content page
+Use `/new-page` (`.claude/commands/new-page.md`). Content pages aren't data-driven: besides `src/app/(main)/<path>/page.tsx` (template: `practice-areas/drug-charges/possession-of-narcotics/page.tsx`), update `HamburgerMenu.tsx` (submenu), `sitemap.ts`, the category hub page (link a placeholder card or add one), `practice-areas/page.tsx`, `Breadcrumbs.tsx` `specialCases` if the slug won't title-case cleanly, and optionally `Footer.tsx`.
+
 ### Adding a blog post
 Use `/new-post` (`.claude/commands/new-post.md`), or manually:
 1. Collect: title, slug (kebab-case, unique, not `page`), metaTitle (≤60 chars), metaDescription (≤160), excerpt, datePublished/dateModified (`YYYY-MM-DD`), featured image (imagedelivery.net URL, alt, width, height), body.

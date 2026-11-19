@@ -49,7 +49,7 @@ export default function Page() {
                 <p><strong>Assault Charges Include</strong></p>
                 <ul className={`${styles.contentList} ${styles.contentBreak}`}>
                     <li><Link href="/practice-areas/assault-charges/assault">Assault</Link></li>
-                    <li>Uttering Threats</li>
+                    <li><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></li>
                     <li>Aggravated Assault</li>
                     <li>Assault with a Weapon</li>
                     <li>Spousal Assault</li>

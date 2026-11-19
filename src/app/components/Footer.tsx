@@ -61,6 +61,7 @@ const Footer = () => {
                                 <li><Link href="/practice-areas/sexual-offences/sexual-assault">Sexual Assault</Link></li>
                                 <li><Link href="/practice-areas/criminal-harassment">Criminal Harassment</Link></li>
                                 <li><Link href="/practice-areas/assault-charges/assault">Assault</Link></li>
+                                <li><Link href="/practice-areas/assault-charges/uttering-threats">Uttering Threats</Link></li>
                                 <li><Link href="/practice-areas/drug-charges/possession-of-narcotics">Possession of Narcotics</Link></li>
                                 <li><Link href="/practice-areas/young-offenders">Young Offenders</Link></li>
                                 <li><Link href="/practice-areas/property-crimes/robbery">Robbery</Link></li>
