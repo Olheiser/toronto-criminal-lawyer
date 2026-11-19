@@ -39,3 +39,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 "node_modules\n.next\n.env" 
+
+# Local pnpm 10+ settings file; pnpm 9 on Vercel rejects it (no "packages" field)
+pnpm-workspace.yaml
