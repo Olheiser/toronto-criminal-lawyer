@@ -37,7 +37,7 @@ const oshawa: Location = {
     faqs: [
         {
             q: "Where will my first court appearance be if I'm charged in Oshawa?",
-            a: "Criminal charges laid in Oshawa are dealt with at the Durham Region courthouse at 150 Bond Street East. Your release documents or summons will list the date and time of your first appearance. In many cases a lawyer can appear on your behalf, so speak to a lawyer before your court date.",
+            a: "Criminal charges laid in Oshawa are dealt with at the Durham Region courthouse at 150 Bond Street East. Your release documents or summons will list the date and time of your first appearance. In many cases a lawyer can appear on your behalf, so speak to a criminal defence lawyer before your court date.",
         },
         {
             q: "Which police service lays charges in Oshawa?",
@@ -45,14 +45,14 @@ const oshawa: Location = {
         },
         {
             q: "What happens if I'm held for a bail hearing in Oshawa?",
-            a: "If police don't release you after an arrest, you must generally be brought before a justice within 24 hours. Bail for Oshawa charges is dealt with through the Durham Region courthouse. Having a lawyer prepare your release plan and any surety before the hearing can make a significant difference.",
+            a: "If police don't release you after an arrest, you must generally be brought before a justice within 24 hours. Bail for Oshawa charges is dealt with through the Durham Region courthouse. Having a criminal defence lawyer prepare your release plan and any surety before the hearing can make a significant difference.",
         },
         {
             q: "Do you represent clients in Oshawa even though your office is in Toronto?",
             a: "Yes. Nicholas Robinson represents clients charged in Oshawa and throughout Durham Region. Many meetings and court appearances can be handled by phone or video, and he attends court in Oshawa in person when your case requires it.",
         },
         {
-            q: "How soon should I call a lawyer after being charged in Oshawa?",
+            q: "How soon should I call a criminal lawyer after being charged in Oshawa?",
             a: "As soon as possible, and ideally before you give any statement to police. Early advice protects your rights, helps with bail and release conditions, and lets your lawyer start reviewing disclosure as soon as it is available. Free consultations are available 24/7 at (647) 372-2661.",
         },
         {

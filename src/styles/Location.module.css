@@ -204,6 +204,11 @@
     gap: 12px;
     font-size: 16px !important;
     line-height: 22px !important;
+    transition: color 0.25s ease;
+}
+
+.reasonIcon {
+    transition: transform 0.3s ease;
 }
 
 .reasonIcon {
@@ -226,6 +231,7 @@
     border-radius: 6px;
     padding: 18px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .practiceCard h3 a {
@@ -251,19 +257,28 @@
 .courtCard {
     display: flex;
     flex-direction: column;
-    gap: 18px;
     background: #ffffff;
     border-radius: 6px;
-    padding: 20px;
+    overflow: hidden;
     margin-top: 14px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+.courtBody {
+    padding: 20px;
+}
+
+/* Image fills the full height of the card (no whitespace beneath it) */
+.courtImageWrap {
+    position: relative;
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
 .courtImage {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
     object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .courtAddress {
@@ -337,10 +352,21 @@
 .faqItem summary h3 {
     font-size: 18px;
     font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.faqItem summary:hover h3,
+.faqItem summary:focus-visible h3,
+.faqItem[open] summary h3 {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.faqAnswer {
+    background: #fafafa;
 }
 
 .faqItem p {
-    background: #fafafa;
     padding: 16px 20px !important;
     font-size: 16px !important;
 }
@@ -364,7 +390,7 @@
 
 .ctaBox h2,
 .ctaBox p {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .ctaBox a {
@@ -392,11 +418,13 @@
 
     .courtCard {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
-    .courtImage {
+    .courtImageWrap {
         width: 260px;
+        min-height: 220px;
+        aspect-ratio: auto;
     }
 }
 
@@ -444,5 +472,112 @@
     .pageContainer {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+/* ======================================= */
+/* ----- Interactivity ----- */
+/* ======================================= */
+
+/* Lead form: fades/slides in the first time it enters the viewport (RevealOnView).
+   Only hidden when JS runs and the visitor hasn't asked for reduced motion. */
+.formReveal {
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    .formReveal:not(.formRevealed) {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+}
+
+/* Lead form: hover and field effects (scoped to city pages) */
+.formColumn form {
+    transition: box-shadow 0.3s ease;
+}
+
+.formColumn input:not([type="checkbox"]),
+.formColumn textarea {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.formColumn input:not([type="checkbox"]):focus,
+.formColumn textarea:focus {
+    background-color: #fffafa;
+}
+
+.formColumn button[type="submit"] {
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+    .formColumn form:hover {
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
+    }
+
+    .formColumn input:not([type="checkbox"]):hover:not(:focus),
+    .formColumn textarea:hover:not(:focus) {
+        border-color: #d8a5a5;
+    }
+
+    .formColumn button[type="submit"]:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(180, 30, 30, 0.3);
+    }
+
+    .reasonGrid li:hover {
+        color: var(--red);
+    }
+
+    .practiceCard:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .reasonGrid li:hover .reasonIcon {
+        transform: translateY(-3px) scale(1.12);
+    }
+
+    .practiceCard:hover {
+        transform: translateY(-4px);
+    }
+
+    .courtImageWrap:hover .courtImage {
+        transform: scale(1.06);
+        filter: brightness(1.05);
+    }
+
+    /* Closing CTA: looping highlight sweep across the heading while hovered */
+    .ctaBox:hover h2 {
+        background: linear-gradient(100deg, #ffffff 0%, #ffffff 40%, #ff9c9c 50%, #ffffff 60%, #ffffff 100%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: ctaShimmer 2.2s linear infinite;
+    }
+}
+
+@keyframes ctaShimmer {
+    from { background-position: 150% 0; }
+    to { background-position: -50% 0; }
+}
+
+/* FAQ: smooth open/close where supported (Chrome/Edge); other browsers snap as before */
+@media (prefers-reduced-motion: no-preference) {
+    .faqItem {
+        interpolate-size: allow-keywords;
+    }
+
+    .faqItem::details-content {
+        block-size: 0;
+        overflow: hidden;
+        transition: block-size 0.35s ease, content-visibility 0.35s allow-discrete;
+    }
+
+    .faqItem[open]::details-content {
+        block-size: auto;
     }
 }

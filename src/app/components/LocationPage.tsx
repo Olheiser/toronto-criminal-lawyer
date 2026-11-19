@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "@/styles/Location.module.css";
 import LeadForm from "./LeadForm";
 import Breadcrumbs from "./Breadcrumbs";
+import RevealOnView from "./RevealOnView";
 import {
     PHONE_DISPLAY,
     PHONE_TEL,
@@ -42,7 +43,7 @@ const STEPS = [
     },
     {
         title: "Disclosure Review",
-        text: "Disclosure is the evidence the Crown intends to use against you. Your lawyer reviews it in detail to identify weaknesses in the case, possible Charter violations, and the defence strategy best suited to your situation.",
+        text: "Disclosure is the evidence the Crown intends to use against you. Your criminal defence lawyer reviews it in detail to identify weaknesses in the case, possible Charter violations, and the defence strategy best suited to your situation.",
     },
     {
         title: "Discuss Your Options",
@@ -112,10 +113,10 @@ export default function LocationPage({ location }: { location: Location }) {
                     <section className={styles.section}>
                         <h2>Why Hire Nicholas Robinson for Your {city} Case</h2>
                         <p>
-                            <Link href="/about">Nicholas Robinson</Link> is a criminal defence lawyer who has
-                            represented clients across Ontario since 2014, practicing exclusively criminal law.
-                            He provides personalized, strategic and compassionate representation, from the first
-                            court appearance in {city} through to trial, and is available 24/7 when you need advice.
+                            <Link href="/about">Nicholas Robinson</Link> has been practicing law in Ontario since
+                            2010. As your criminal defence lawyer, he provides personalized, strategic and
+                            compassionate representation, from the first court appearance in {city} through to
+                            trial. If you or someone close to you has been arrested, help is a phone call away.
                         </p>
                         <ul className={styles.reasonGrid}>
                             {REASONS.map((r) => (
@@ -157,16 +158,17 @@ export default function LocationPage({ location }: { location: Location }) {
                         {location.courthouses.map((court) => (
                             <div key={court.name} className={styles.courtCard}>
                                 {court.image && (
-                                    <Image
-                                        src={court.image.src}
-                                        alt={court.image.alt}
-                                        width={court.image.width}
-                                        height={court.image.height}
-                                        sizes="(max-width: 700px) 100vw, 280px"
-                                        className={styles.courtImage}
-                                    />
+                                    <div className={styles.courtImageWrap}>
+                                        <Image
+                                            src={court.image.src}
+                                            alt={court.image.alt}
+                                            fill
+                                            sizes="(max-width: 599px) 100vw, 280px"
+                                            className={styles.courtImage}
+                                        />
+                                    </div>
                                 )}
-                                <div>
+                                <div className={styles.courtBody}>
                                     <h3>{court.name}</h3>
                                     <address className={styles.courtAddress}>
                                         {court.addressLines.map((line) => (
@@ -210,7 +212,9 @@ export default function LocationPage({ location }: { location: Location }) {
                                     <summary>
                                         <h3>{faq.q}</h3>
                                     </summary>
-                                    <p>{faq.a}</p>
+                                    <div className={styles.faqAnswer}>
+                                        <p>{faq.a}</p>
+                                    </div>
                                 </details>
                             ))}
                         </div>
@@ -237,17 +241,19 @@ export default function LocationPage({ location }: { location: Location }) {
                     </section>
 
                     <section className={styles.ctaBox}>
-                        <h2>Speak to a {city} Criminal Lawyer Today</h2>
+                        <h2>Speak to {/^[aeiou]/i.test(city) ? "an" : "a"} {city} Criminal Lawyer Today</h2>
                         <p>
-                            The sooner you get advice, the more options you have. Call{" "}
-                            <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> any time, day or night, for a free and
-                            confidential consultation.
+                            The sooner you get advice, the more options you have. If you have been arrested or
+                            charged, call <a href={PHONE_TEL}>{PHONE_DISPLAY}</a> for a free and confidential
+                            consultation.
                         </p>
                     </section>
                 </article>
 
                 <aside id="consultation" className={styles.formColumn}>
-                    <LeadForm />
+                    <RevealOnView className={styles.formReveal} visibleClassName={styles.formRevealed}>
+                        <LeadForm />
+                    </RevealOnView>
                 </aside>
             </div>
         </main>
